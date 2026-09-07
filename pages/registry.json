@@ -1,4 +1,766 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
-  "items": []
+  "items": [
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "auth-login",
+      "type": "registry:page",
+      "title": "Entrar com link mágico",
+      "description": "Entrar — acesso por link mágico, com painel editorial à esquerda.",
+      "author": "Supernova",
+      "categories": [
+        "auth"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "kbd",
+        "label",
+        "DaniloAmaralUX/supernova-layouts/micro-rotulo",
+        "DaniloAmaralUX/supernova-layouts/separador-com-rotulo",
+        "DaniloAmaralUX/supernova-layouts/supernova-tokens"
+      ],
+      "files": [
+        {
+          "path": "auth/auth-login/auth-login.tsx",
+          "type": "registry:page",
+          "target": "app/supernova/auth-login/page.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "app-ui",
+          "category": "Autenticação",
+          "tags": [
+            "login",
+            "acesso",
+            "link mágico",
+            "auth"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "calendar-month",
+      "type": "registry:page",
+      "title": "Calendário mensal",
+      "description": "Visão de mês — grade com eventos, navegável por teclado.",
+      "author": "Supernova",
+      "categories": [
+        "calendars"
+      ],
+      "registryDependencies": [
+        "button",
+        "DaniloAmaralUX/supernova-layouts/micro-rotulo",
+        "DaniloAmaralUX/supernova-layouts/supernova-tokens"
+      ],
+      "files": [
+        {
+          "path": "app/calendar-month/calendar-month.tsx",
+          "type": "registry:page",
+          "target": "app/supernova/calendar-month/page.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "app-ui",
+          "category": "Produto",
+          "tags": [
+            "calendário",
+            "mês",
+            "agenda",
+            "calendars"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "card-stat-tile",
+      "type": "registry:page",
+      "title": "Cartão de métrica",
+      "description": "Bloco de métrica — as quatro formas que o mesmo dado assume.",
+      "author": "Supernova",
+      "categories": [
+        "cards"
+      ],
+      "registryDependencies": [
+        "DaniloAmaralUX/supernova-layouts/micro-rotulo",
+        "DaniloAmaralUX/supernova-layouts/supernova-tokens"
+      ],
+      "files": [
+        {
+          "path": "app/card-stat-tile/card-stat-tile.tsx",
+          "type": "registry:page",
+          "target": "app/supernova/card-stat-tile/page.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "app-ui",
+          "category": "Produto",
+          "tags": [
+            "métrica",
+            "indicador",
+            "cartão",
+            "cards"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "chart-revenue-area",
+      "type": "registry:page",
+      "title": "Gráfico de receita",
+      "description": "Receita em área — SVG puro, sem biblioteca de gráfico.",
+      "author": "Supernova",
+      "categories": [
+        "charts"
+      ],
+      "registryDependencies": [
+        "DaniloAmaralUX/supernova-layouts/micro-rotulo",
+        "DaniloAmaralUX/supernova-layouts/supernova-tokens"
+      ],
+      "files": [
+        {
+          "path": "app/chart-revenue-area/chart-revenue-area.tsx",
+          "type": "registry:page",
+          "target": "app/supernova/chart-revenue-area/page.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "app-ui",
+          "category": "Produto",
+          "tags": [
+            "gráfico",
+            "receita",
+            "área",
+            "charts"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "dashboard-metrics-overview",
+      "type": "registry:page",
+      "title": "Visão de métricas",
+      "description": "Visão de métricas — grade de indicadores com minigráfico e feed ao lado.",
+      "author": "Supernova",
+      "categories": [
+        "dashboards"
+      ],
+      "registryDependencies": [
+        "DaniloAmaralUX/supernova-layouts/micro-rotulo",
+        "DaniloAmaralUX/supernova-layouts/supernova-tokens"
+      ],
+      "files": [
+        {
+          "path": "app/dashboard-metrics-overview/dashboard-metrics-overview.tsx",
+          "type": "registry:page",
+          "target": "app/supernova/dashboard-metrics-overview/page.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "app-ui",
+          "category": "Produto",
+          "tags": [
+            "painel",
+            "métricas",
+            "visão geral",
+            "dashboards"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "empty-inbox-zero",
+      "type": "registry:page",
+      "title": "Caixa de entrada vazia",
+      "description": "Caixa de entrada zerada — o vazio como conquista, não como falha.",
+      "author": "Supernova",
+      "categories": [
+        "empty-states"
+      ],
+      "registryDependencies": [
+        "button",
+        "DaniloAmaralUX/supernova-layouts/micro-rotulo",
+        "DaniloAmaralUX/supernova-layouts/supernova-tokens"
+      ],
+      "files": [
+        {
+          "path": "app/empty-inbox-zero/empty-inbox-zero.tsx",
+          "type": "registry:page",
+          "target": "app/supernova/empty-inbox-zero/page.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "app-ui",
+          "category": "Formulários",
+          "tags": [
+            "estado vazio",
+            "caixa de entrada",
+            "empty-states"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "filter-toolbar",
+      "type": "registry:page",
+      "title": "Barra de filtros",
+      "description": "Barra de filtros — facetas em popover, chips do que está ativo.",
+      "author": "Supernova",
+      "categories": [
+        "filters"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "popover",
+        "DaniloAmaralUX/supernova-layouts/micro-rotulo",
+        "DaniloAmaralUX/supernova-layouts/supernova-tokens"
+      ],
+      "files": [
+        {
+          "path": "app/filter-toolbar/filter-toolbar.tsx",
+          "type": "registry:page",
+          "target": "app/supernova/filter-toolbar/page.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "app-ui",
+          "category": "Produto",
+          "tags": [
+            "filtro",
+            "barra",
+            "busca",
+            "filters"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "form-workspace-settings",
+      "type": "registry:page",
+      "title": "Configurações do workspace",
+      "description": "Configurações do workspace — formulário longo, salvo por seção.",
+      "author": "Supernova",
+      "categories": [
+        "forms"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "label",
+        "switch",
+        "textarea",
+        "DaniloAmaralUX/supernova-layouts/micro-rotulo",
+        "DaniloAmaralUX/supernova-layouts/supernova-tokens"
+      ],
+      "files": [
+        {
+          "path": "app/form-workspace-settings/form-workspace-settings.tsx",
+          "type": "registry:page",
+          "target": "app/supernova/form-workspace-settings/page.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "app-ui",
+          "category": "Formulários",
+          "tags": [
+            "formulário",
+            "configurações",
+            "workspace",
+            "forms"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "layout-app-shell",
+      "type": "registry:page",
+      "title": "Casca de aplicação",
+      "description": "Casca de aplicação — trilho lateral recolhível, topo fixo, conteúdo.",
+      "author": "Supernova",
+      "categories": [
+        "layouts"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "input",
+        "DaniloAmaralUX/supernova-layouts/micro-rotulo",
+        "DaniloAmaralUX/supernova-layouts/supernova-tokens"
+      ],
+      "files": [
+        {
+          "path": "app/layout-app-shell/layout-app-shell.tsx",
+          "type": "registry:page",
+          "target": "app/supernova/layout-app-shell/page.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "app-ui",
+          "category": "Produto",
+          "tags": [
+            "casca",
+            "trilho",
+            "layout",
+            "layouts"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "modal-command-palette",
+      "type": "registry:page",
+      "title": "Paleta de comandos",
+      "description": "Paleta de comandos — busca única sobre navegação, ações e conteúdo.",
+      "author": "Supernova",
+      "categories": [
+        "modals"
+      ],
+      "registryDependencies": [
+        "kbd",
+        "DaniloAmaralUX/supernova-layouts/micro-rotulo",
+        "DaniloAmaralUX/supernova-layouts/supernova-tokens"
+      ],
+      "files": [
+        {
+          "path": "app/modal-command-palette/modal-command-palette.tsx",
+          "type": "registry:page",
+          "target": "app/supernova/modal-command-palette/page.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "app-ui",
+          "category": "Produto",
+          "tags": [
+            "paleta",
+            "comando",
+            "atalho",
+            "modals"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "pricing-three-tier",
+      "type": "registry:page",
+      "title": "Preços em três planos",
+      "description": "Três planos — com alternância entre mensal e anual.",
+      "author": "Supernova",
+      "categories": [
+        "pricing"
+      ],
+      "registryDependencies": [
+        "button",
+        "switch",
+        "DaniloAmaralUX/supernova-layouts/micro-rotulo",
+        "DaniloAmaralUX/supernova-layouts/supernova-tokens"
+      ],
+      "files": [
+        {
+          "path": "marketing/pricing-three-tier/pricing-three-tier.tsx",
+          "type": "registry:page",
+          "target": "app/supernova/pricing-three-tier/page.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "blocks",
+          "category": "Marketing",
+          "tags": [
+            "preços",
+            "planos",
+            "assinatura",
+            "pricing"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "profile-hero",
+      "type": "registry:page",
+      "title": "Cabeçalho de perfil",
+      "description": "Capa de perfil — identidade, contexto e o que a pessoa fez.",
+      "author": "Supernova",
+      "categories": [
+        "profile"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "badge",
+        "button",
+        "DaniloAmaralUX/supernova-layouts/micro-rotulo",
+        "DaniloAmaralUX/supernova-layouts/separador-com-rotulo",
+        "DaniloAmaralUX/supernova-layouts/supernova-tokens"
+      ],
+      "files": [
+        {
+          "path": "app/profile-hero/profile-hero.tsx",
+          "type": "registry:page",
+          "target": "app/supernova/profile-hero/page.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "app-ui",
+          "category": "Produto",
+          "tags": [
+            "perfil",
+            "cabeçalho",
+            "pessoa",
+            "profile"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "settings-profile",
+      "type": "registry:page",
+      "title": "Configurações de perfil",
+      "description": "Perfil — abas de configuração com o formulário da pessoa.",
+      "author": "Supernova",
+      "categories": [
+        "settings"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "input",
+        "label",
+        "select",
+        "tabs",
+        "textarea",
+        "DaniloAmaralUX/supernova-layouts/micro-rotulo",
+        "DaniloAmaralUX/supernova-layouts/supernova-tokens"
+      ],
+      "files": [
+        {
+          "path": "app/settings-profile/settings-profile.tsx",
+          "type": "registry:page",
+          "target": "app/supernova/settings-profile/page.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "app-ui",
+          "category": "Produto",
+          "tags": [
+            "configurações",
+            "perfil",
+            "conta",
+            "settings"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "table-invoices",
+      "type": "registry:page",
+      "title": "Tabela de faturas",
+      "description": "Faturas — ordenação, seleção e ação em lote.",
+      "author": "Supernova",
+      "categories": [
+        "tables"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "checkbox",
+        "DaniloAmaralUX/supernova-layouts/micro-rotulo",
+        "DaniloAmaralUX/supernova-layouts/supernova-tokens"
+      ],
+      "files": [
+        {
+          "path": "app/table-invoices/table-invoices.tsx",
+          "type": "registry:page",
+          "target": "app/supernova/table-invoices/page.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "app-ui",
+          "category": "Produto",
+          "tags": [
+            "tabela",
+            "faturas",
+            "cobrança",
+            "tables"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "thread-inline",
+      "type": "registry:page",
+      "title": "Conversa em linha",
+      "description": "Thread embutida — comentário ancorado num trecho, com reações e resolução.",
+      "author": "Supernova",
+      "categories": [
+        "threads"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "kbd",
+        "textarea",
+        "DaniloAmaralUX/supernova-layouts/micro-rotulo",
+        "DaniloAmaralUX/supernova-layouts/supernova-tokens"
+      ],
+      "files": [
+        {
+          "path": "app/thread-inline/thread-inline.tsx",
+          "type": "registry:page",
+          "target": "app/supernova/thread-inline/page.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "app-ui",
+          "category": "Produto",
+          "tags": [
+            "comentário",
+            "conversa",
+            "revisão",
+            "threads"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "timeline-audit",
+      "type": "registry:page",
+      "title": "Linha do tempo de auditoria",
+      "description": "Trilha de auditoria — quem fez o quê, quando, e de onde.",
+      "author": "Supernova",
+      "categories": [
+        "timelines"
+      ],
+      "registryDependencies": [
+        "badge",
+        "DaniloAmaralUX/supernova-layouts/micro-rotulo",
+        "DaniloAmaralUX/supernova-layouts/supernova-tokens"
+      ],
+      "files": [
+        {
+          "path": "app/timeline-audit/timeline-audit.tsx",
+          "type": "registry:page",
+          "target": "app/supernova/timeline-audit/page.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "app-ui",
+          "category": "Produto",
+          "tags": [
+            "linha do tempo",
+            "auditoria",
+            "histórico",
+            "timelines"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "toast-success",
+      "type": "registry:page",
+      "title": "Aviso de sucesso",
+      "description": "Aviso de sucesso — com desfazer, e com o tempo à vista.",
+      "author": "Supernova",
+      "categories": [
+        "toasts"
+      ],
+      "registryDependencies": [
+        "button",
+        "DaniloAmaralUX/supernova-layouts/micro-rotulo",
+        "DaniloAmaralUX/supernova-layouts/supernova-tokens"
+      ],
+      "files": [
+        {
+          "path": "app/toast-success/toast-success.tsx",
+          "type": "registry:page",
+          "target": "app/supernova/toast-success/page.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "app-ui",
+          "category": "Produto",
+          "tags": [
+            "aviso",
+            "sucesso",
+            "notificação",
+            "toasts"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "tour-checklist",
+      "type": "registry:page",
+      "title": "Lista de primeiros passos",
+      "description": "Lista de onboarding — o caminho até o primeiro resultado.",
+      "author": "Supernova",
+      "categories": [
+        "tours"
+      ],
+      "registryDependencies": [
+        "button",
+        "DaniloAmaralUX/supernova-layouts/micro-rotulo",
+        "DaniloAmaralUX/supernova-layouts/supernova-tokens"
+      ],
+      "files": [
+        {
+          "path": "app/tour-checklist/tour-checklist.tsx",
+          "type": "registry:page",
+          "target": "app/supernova/tour-checklist/page.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "app-ui",
+          "category": "Produto",
+          "tags": [
+            "onboarding",
+            "checklist",
+            "primeiros passos",
+            "tours"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    }
+  ]
 }

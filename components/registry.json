@@ -1,4 +1,72 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
-  "items": []
+  "items": [
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "micro-rotulo",
+      "type": "registry:component",
+      "title": "Micro-rótulo",
+      "description": "O rótulo em mono maiúsculo com entreletra aberta.",
+      "author": "Supernova",
+      "files": [
+        {
+          "path": "micro-rotulo/micro-rotulo.tsx",
+          "type": "registry:component",
+          "target": "components/supernova/micro-rotulo.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "rótulo",
+            "tipografia",
+            "mono"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "separador-com-rotulo",
+      "type": "registry:component",
+      "title": "Separador com rótulo",
+      "description": "Um separador com rótulo no meio — o \"ou\" entre formas de entrar.",
+      "author": "Supernova",
+      "registryDependencies": [
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "separador-com-rotulo/separador-com-rotulo.tsx",
+          "type": "registry:component",
+          "target": "components/supernova/separador-com-rotulo.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "separador",
+            "divisor",
+            "ou"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    }
+  ]
 }
