@@ -93,27 +93,29 @@ npm install
 npm run verify
 ```
 
-`npm run verify` faz quatro coisas, nesta ordem:
+`npm run verify` faz cinco coisas, nesta ordem:
 
 1. `check` — as regras próprias deste repositório: nome duplicado, item na
    pasta errada para o tipo dele, nome que colide com primitivo do shadcn,
    nome terminado em número, arquivo declarado que não existe, arquivo
    existente que ninguém declarou, `target` faltando onde o schema exige,
-   `meta.supernova` ausente ou com valor fora do vocabulário, e diretiva
-   `"use client"` fora da primeira linha.
+   `meta.supernova` ausente ou fora do vocabulário, e diretiva `"use client"`
+   fora da primeira linha.
 2. `catalog:check` — se o `CATALOG.md` ainda bate com o registro. Se não bate,
    rode `npm run catalog` e inclua o resultado no commit.
-3. `build` — o `shadcn build` de verdade, escrevendo em `.registry-build/`, que
+3. `validate` — o validador oficial do schema do shadcn. O `check` cobre as
+   regras da casa; este cobre o contrato da ferramenta.
+4. `build` — o `shadcn build` de verdade, escrevendo em `.registry-build/`, que
    é descartável e não vai para o Git.
-4. `verify:instalacao` — a CLI **real** do shadcn instalando numa amostra de
+5. `verify:instalacao` — a CLI **real** do shadcn instalando numa amostra de
    itens, num projeto descartável criado fora deste repositório, com os
-   aliases padrão do shadcn em vez dos nossos. Confere que os arquivos
-   chegaram, que nenhum import ficou apontando para caminho que só existe
-   aqui, e que a diretiva de cliente sobreviveu.
+   aliases padrão do shadcn em vez dos nossos. Confere que os arquivos do
+   próprio item chegaram, que nenhum import ficou apontando para caminho que
+   só existe aqui, e que a diretiva de cliente sobreviveu.
 
-Os três primeiros passos falam sobre o registro. O quarto é o único que fala
-sobre a pessoa que instala, e é por isso que ele existe: schema válido não é
-arquivo entregue, e arquivo entregue não é import reescrito.
+Os quatro primeiros falam sobre o registro. O quinto é o único que fala sobre a
+pessoa que instala, e é por isso que ele existe: schema válido não é arquivo
+entregue, e arquivo entregue não é import reescrito.
 
 Para provar o endereço publicado — `DaniloAmaralUX/supernova-layouts/<item>`,
 o que a documentação mostra — em vez da árvore local:

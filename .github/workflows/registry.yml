@@ -49,6 +49,11 @@ jobs:
       - name: Conferir se o catálogo está atualizado
         run: npm run catalog:check
 
+      # O validador oficial do schema. O check acima cobre as regras da casa;
+      # este cobre o contrato da ferramenta, que não é a mesma coisa.
+      - name: Validar o registro pelo schema do shadcn
+        run: npm run validate
+
       # O build de verdade da CLI do shadcn. Se ele passa, a instalação
       # funciona para quem consome.
       - name: Construir o registro
