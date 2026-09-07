@@ -13,7 +13,16 @@
           "path": "use-media-query/use-media-query.ts",
           "type": "registry:hook"
         }
-      ]
+      ],
+      "meta": {
+        "supernova": {
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
     }
   ]
 }

@@ -21,7 +21,24 @@
           "type": "registry:component",
           "target": "components/supernova/hero-supernova.tsx"
         }
-      ]
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "blocks",
+          "category": "Marketing",
+          "tags": [
+            "hero",
+            "abertura",
+            "chamada"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
     }
   ]
 }

@@ -19,6 +19,7 @@ import {
   resolverRegistro,
   caminhoDoArquivo,
 } from "./registry-lib.mjs"
+import { conferirMetadados } from "./taxonomia.mjs"
 
 /** Tipos de arquivo que o schema do shadcn exige acompanhar de `target`. */
 const EXIGEM_TARGET = new Set(["registry:page", "registry:file"])
@@ -223,6 +224,14 @@ for (const pasta of ["blocks", "pages"]) {
       )
     }
   }
+}
+
+// Regra 8 — todo item declara `meta.supernova`: prateleira, categoria,
+// etiquetas, maturidade e proveniencia. Sem isso o produto nao sabe onde
+// mostrar o item, a busca nao o encontra, e a atribuicao de licenca fica
+// dependendo de alguem lembrar de escrever num arquivo separado.
+for (const { item, pastaRaiz } of coletados) {
+  erros.push(...conferirMetadados(item, pastaRaiz))
 }
 
 // ---------------------------------------------------------------------------
