@@ -75,6 +75,17 @@ diferentes não colidem no mesmo JSON.
 O nome de cada item, porém, precisa ser único **no repositório inteiro** — não
 apenas dentro da pasta.
 
+## O que já existe
+
+O [**catálogo**](CATALOG.md) lista todos os itens publicados, com o nome
+legível, a descrição, o link para a pasta e o comando de instalação já montado.
+Ele é **gerado** a partir dos `registry.json` por `npm run catalog`, e a CI
+reprova quando ele fica desatualizado — então o que está escrito lá é o que a
+CLI realmente entrega.
+
+O catálogo ainda é texto. Uma vitrine com imagem de cada layout não existe e
+está anotada como próximo passo no [CHANGELOG.md](CHANGELOG.md).
+
 ## Verificar antes de abrir um PR
 
 ```bash
@@ -82,12 +93,18 @@ npm install
 npm run verify
 ```
 
-`npm run check` confere as regras próprias deste repositório: nome duplicado,
-arquivo declarado que não existe, arquivo existente que ninguém declarou,
-`target` faltando onde o schema exige.
+`npm run verify` faz três coisas:
 
-`npm run build` roda o `shadcn build` de verdade e escreve em `.registry-build/`,
-que é descartável e não vai para o Git. Se ele passar, a instalação funciona.
+1. `check` — as regras próprias deste repositório: nome duplicado, item na
+   pasta errada para o tipo dele, nome que colide com primitivo do shadcn,
+   nome terminado em número, arquivo declarado que não existe, arquivo
+   existente que ninguém declarou, `target` faltando onde o schema exige.
+2. `catalog:check` — se o `CATALOG.md` ainda bate com o registro. Se não bate,
+   rode `npm run catalog` e inclua o resultado no commit.
+3. `build` — o `shadcn build` de verdade, escrevendo em `.registry-build/`, que
+   é descartável e não vai para o Git.
+
+Se os três passam, a instalação funciona.
 
 ## Documentação
 

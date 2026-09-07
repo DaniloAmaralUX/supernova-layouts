@@ -6,7 +6,7 @@
 2. Escolha a pasta pelo **tipo** do item. Em dúvida, leia o `README.md` da pasta.
 3. Crie a pasta do item e o arquivo dentro dela.
 4. Declare o item no `registry.json` **daquela pasta**, nunca no da raiz.
-5. Rode `npm run verify`.
+5. Rode `npm run catalog` e depois `npm run verify`.
 6. Abra o pull request preenchendo o checklist.
 
 O passo 5 não é opcional. Se ele falhar, a CI vai falhar igual.

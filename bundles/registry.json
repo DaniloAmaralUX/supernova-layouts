@@ -6,7 +6,7 @@
       "name": "kit-inicial",
       "type": "registry:item",
       "title": "Kit inicial",
-      "description": "Instala de uma vez os itens de referencia deste registro. Serve para conferir que a instalacao funciona ponta a ponta.",
+      "description": "Instala de uma vez os itens de referência deste registro. Serve para conferir que a instalação funciona ponta a ponta.",
       "author": "Supernova",
       "registryDependencies": [
         "DaniloAmaralUX/supernova-layouts/hero-supernova",

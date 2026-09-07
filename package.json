@@ -11,8 +11,10 @@
   },
   "scripts": {
     "check": "node scripts/check-registry.mjs",
+    "catalog": "node scripts/build-catalog.mjs",
+    "catalog:check": "node scripts/build-catalog.mjs --check",
     "build": "shadcn build ./registry.json --output ./.registry-build",
-    "verify": "npm run check && npm run build"
+    "verify": "npm run check && npm run catalog:check && npm run build"
   },
   "devDependencies": {
     "shadcn": "4.19.0"

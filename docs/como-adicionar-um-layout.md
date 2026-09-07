@@ -73,11 +73,15 @@ interface PricingThreeTiersProps {
 O bloco recebe os planos e devolve a escolha. Ele não conhece preço de verdade,
 não fala com API e não sabe se existe um checkout do outro lado.
 
-## 5. Conferir
+## 5. Atualizar o catálogo e conferir
 
 ```bash
+npm run catalog
 npm run verify
 ```
+
+O primeiro comando regrava o `CATALOG.md` a partir dos `registry.json`. Ele é
+gerado — não edite à mão. O segundo confere tudo.
 
 Erro comum e o que ele quer dizer:
 
@@ -87,6 +91,9 @@ Erro comum e o que ele quer dizer:
 | `declara ..., que não existe` | O `path` está relativo à raiz em vez da pasta |
 | `Nome duplicado` | Já existe item com esse nome em outra pasta |
 | `é do tipo X mas foi declarado em Y/` | O item está na pasta errada |
+| `é o mesmo de um item do registro oficial do shadcn` | Escolha outro nome; esse colide com um primitivo |
+| `termina em número` | Nomeie a diferença da variante, não a ordem dela |
+| `CATALOG.md está desatualizado` | Faltou rodar `npm run catalog` |
 
 ## 6. Abrir o pull request
 

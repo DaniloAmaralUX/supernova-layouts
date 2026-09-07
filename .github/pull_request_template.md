@@ -10,7 +10,7 @@
 
 ## Antes de pedir revisão
 
-- [ ] `npm run verify` passou aqui na minha máquina.
+- [ ] Rodei `npm run catalog` e `npm run verify`, e os dois passaram.
 - [ ] O item está na pasta que corresponde ao tipo dele.
 - [ ] O nome do item é único no repositório inteiro.
 - [ ] Primitivos entram por `registryDependencies`; não copiei arquivo do shadcn.

@@ -6,10 +6,15 @@
       "name": "hero-supernova",
       "type": "registry:block",
       "title": "Hero Supernova",
-      "description": "Secao de abertura com titulo, apoio e duas acoes. Exemplo de referencia da estrutura deste registro.",
+      "description": "Seção de abertura com título, texto de apoio e duas ações. Item de referência da estrutura deste registro.",
       "author": "Supernova",
-      "categories": ["marketing", "hero"],
-      "registryDependencies": ["button"],
+      "categories": [
+        "marketing",
+        "hero"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
       "files": [
         {
           "path": "marketing/hero-supernova/hero-supernova.tsx",

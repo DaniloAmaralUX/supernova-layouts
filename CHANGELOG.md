@@ -20,6 +20,16 @@ variável de tema já publicada.
 - `use-media-query`, hook autoral de referência.
 - `kit-inicial`, conjunto que instala os dois itens de referência.
 - `scripts/check-registry.mjs`, que confere nome duplicado, tipo fora da pasta,
-  arquivo declarado inexistente, arquivo órfão e `target` faltando.
+  nome em colisão com primitivo do shadcn, nome terminado em número, arquivo
+  declarado inexistente, arquivo órfão, `target` faltando e pasta sem README.
+- `CATALOG.md` gerado por `scripts/build-catalog.mjs`, com o comando de
+  instalação de cada item já montado.
 - Verificação automática em pull request e em `main`.
 - Documentação em `docs/` e regras de contribuição.
+
+### Próximo passo conhecido
+
+- **Vitrine com imagem.** Hoje só existe descrição por escrito no `CATALOG.md`.
+  Para escolher um layout sem instalar, falta uma imagem por item — o caminho
+  provável é um `example.tsx` de nome fixo em cada pasta de item e um
+  `preview.png` gerado dele na CI. Não foi feito, e o catálogo diz isso.

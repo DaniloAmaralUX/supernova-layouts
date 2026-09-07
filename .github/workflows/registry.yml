@@ -37,6 +37,11 @@ jobs:
       - name: Conferir as regras do repositório
         run: npm run check
 
+      # O CATALOG.md é gerado do registro. Se ele não bate com o que os
+      # registry.json declaram, quem lê o catálogo lê uma coisa e instala outra.
+      - name: Conferir se o catálogo está atualizado
+        run: npm run catalog:check
+
       # O build de verdade da CLI do shadcn. Se ele passa, a instalação
       # funciona para quem consome.
       - name: Construir o registro

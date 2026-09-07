@@ -29,7 +29,13 @@ declarado. `scripts/check-registry.mjs` reprova quando não combina.
    declara — não à raiz do repositório.
 4. `registry:page` e `registry:file` exigem `target`. Sem ele a instalação
    não sabe onde escrever.
-5. O nome do item precisa ser único no repositório inteiro.
+5. O nome do item precisa ser único no repositório inteiro, em `kebab-case`,
+   não pode repetir nome de primitivo do shadcn (`button`, `card`, `table`…) e
+   não pode terminar em número. `title` e `description` são obrigatórios: eles
+   são o que aparece no catálogo.
+6. Depois de mexer em qualquer `registry.json`, rode `npm run catalog`. O
+   `CATALOG.md` é gerado, nunca editado à mão, e a CI reprova se ele ficar
+   desatualizado.
 
 ## Nunca faça
 

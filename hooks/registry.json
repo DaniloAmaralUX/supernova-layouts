@@ -6,7 +6,7 @@
       "name": "use-media-query",
       "type": "registry:hook",
       "title": "useMediaQuery",
-      "description": "Le uma media query e acompanha a mudanca, com leitura segura no servidor.",
+      "description": "Lê uma media query do CSS e acompanha a mudança, com leitura segura no servidor.",
       "author": "Supernova",
       "files": [
         {
