@@ -3,10 +3,89 @@
   "items": [
     {
       "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-      "name": "iconiq-button",
+      "name": "iconiq-accordion",
       "type": "registry:ui",
-      "title": "Button",
-      "description": "Primary action control with larger default hit targets, spring press feedback, optional intrinsic width animation, and Motion ripples. Forwards ref and native button props.",
+      "title": "Accordion",
+      "description": "Accordion with spring height, staggered text, default or quiet disclosure styles, and optional multi-open behavior. Built with Motion.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-accordion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-accordion/iconiq-accordion.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-accordion.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "accordion"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-ai-input",
+      "type": "registry:ui",
+      "title": "AI Input",
+      "description": "Chat-style AI composer with agent and model chips, sent-message bubbles, and an Apple Intelligence-style gradient wave on send.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-ai-input/iconiq-ai-input.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-ai-input.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "ai-input"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "description": "Compound Alert, AlertTitle, and AlertDescription parts with optional icons, legacy prop support, polite live announcements, and inline or toast behavior.",
       "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
       "dependencies": [
         "motion",
@@ -14,9 +93,248 @@
       ],
       "files": [
         {
-          "path": "iconiq-button/iconiq-button.tsx",
+          "path": "iconiq-alert/iconiq-alert.tsx",
           "type": "registry:ui",
-          "target": "components/ui/iconiq-button.tsx"
+          "target": "components/ui/iconiq-alert.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Feedback",
+          "tags": [
+            "iconiq",
+            "motion",
+            "alert"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-avatar",
+      "type": "registry:ui",
+      "title": "Avatar",
+      "description": "Compound Base UI avatar with image, fallback, variant status badge, grouped stack, overflow count, auto initials, and tooltip-enabled status hints.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "@radix-ui/react-slot",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-avatar/iconiq-avatar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-avatar.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "avatar"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-accordion",
+      "type": "registry:ui",
+      "title": "Accordion (Base UI)",
+      "description": "Compound Accordion, AccordionItem, AccordionTrigger, and AccordionContent parts layered over Base UI primitives with default and quiet variants.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-accordion/iconiq-b-accordion.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-accordion.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-accordion"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-alert-dialog",
+      "type": "registry:ui",
+      "title": "Alert Dialog (Base UI)",
+      "description": "Alert dialog with asChild triggers, action variants, optional media, controlled async flows, and reduced-motion aware transitions layered over Base UI primitives.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "@radix-ui/react-slot",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-alert-dialog/iconiq-b-alert-dialog.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-alert-dialog.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-alert-dialog"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-autocomplete",
+      "type": "registry:ui",
+      "title": "Autocomplete (Base UI)",
+      "description": "Base UI autocomplete with list filtering, suggestion highlight motion, and the same Iconiq input shell as the combobox install.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-autocomplete/iconiq-b-autocomplete.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-autocomplete.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-autocomplete"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-avatar",
+      "type": "registry:ui",
+      "title": "Avatar (Base UI)",
+      "description": "Avatar with the same single Iconiq API layered over Base UI primitives, keeping immediate fallback initials and a quiet image crossfade.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-avatar/iconiq-b-avatar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-avatar.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-avatar"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-button",
+      "type": "registry:ui",
+      "title": "Button (Base UI)",
+      "description": "Button with embedded Iconiq theme tokens, optional loading, href link rendering, ripple, press spring, hover lift, and intrinsic-width animation over the Base UI button primitive.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority",
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-button/iconiq-b-button.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-button.tsx"
         }
       ],
       "meta": {
@@ -26,7 +344,755 @@
           "tags": [
             "iconiq",
             "motion",
-            "button"
+            "b-button"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-checkbox",
+      "type": "registry:ui",
+      "title": "Checkbox (Base UI)",
+      "description": "Checkbox with the same Iconiq API layered over Base UI primitives, preserving the original fill spring, press scale, checkmark draw, and label fade.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-checkbox/iconiq-b-checkbox.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-checkbox.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-checkbox"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-checkbox-group",
+      "type": "registry:ui",
+      "title": "Checkbox Group (Base UI)",
+      "description": "Checkbox group with the same Iconiq API layered over Base UI primitives, preserving the original row hover, tap spring, checkmark draw, and disclosure behavior.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-checkbox-group/iconiq-b-checkbox-group.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-checkbox-group.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-checkbox-group"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-collapsible",
+      "type": "registry:ui",
+      "title": "Collapsible (Base UI)",
+      "description": "Collapsible with the same Iconiq API layered over Base UI primitives, preserving the same height, icon, and content transitions as the Radix version.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-collapsible/iconiq-b-collapsible.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-collapsible.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-collapsible"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-combobox",
+      "type": "registry:ui",
+      "title": "Combobox (Base UI)",
+      "description": "Compound Combobox parts layered over Base UI primitives, preserving the original input shell, clear action, item highlight, checkmark, and dropdown motion.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-combobox/iconiq-b-combobox.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-combobox.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-combobox"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-context-menu",
+      "type": "registry:ui",
+      "title": "Context Menu (Base UI)",
+      "description": "Composable context menu layered over Base UI primitives, preserving the original panel spring, row entrance, active highlight, and shortcut layout.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-context-menu/iconiq-b-context-menu.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-context-menu.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-context-menu"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-dialog",
+      "type": "registry:ui",
+      "title": "Dialog (Base UI)",
+      "description": "Dialog with the same exported Iconiq parts layered over Base UI primitives, preserving the original dialog springs while using the softer alert-dialog card styling and overlay treatment.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "@radix-ui/react-slot",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-dialog/iconiq-b-dialog.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-dialog.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-dialog"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-hover-card",
+      "type": "registry:ui",
+      "title": "Hover Card (Base UI)",
+      "description": "Hover card with the same Iconiq API layered over Base UI popover primitives, preserving delayed hover reveal, instant focus open, collision-aware placement, and spring-driven content motion.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-hover-card/iconiq-b-hover-card.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-hover-card.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-hover-card"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-popover",
+      "type": "registry:ui",
+      "title": "Popover (Base UI)",
+      "description": "Popover with the same Iconiq API layered over Base UI popover primitives, preserving side-aware panel motion, optional anchor support, and size-aware content transitions.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-popover/iconiq-b-popover.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-popover.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-popover"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-progress",
+      "type": "registry:ui",
+      "title": "Progress (Base UI)",
+      "description": "Progress bar with the same Iconiq API layered over Base UI primitives, preserving the spring-smoothed fill, restrained inline readout, and quiet indeterminate motion.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-progress/iconiq-b-progress.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-progress.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Feedback",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-progress"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-radio-group",
+      "type": "registry:ui",
+      "title": "Radio Group (Base UI)",
+      "description": "Radio group with the same Iconiq API layered over Base UI primitives, preserving the original shared highlight, spring-loaded ring and dot, and staggered row entrance.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-radio-group/iconiq-b-radio-group.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-radio-group.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-radio-group"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-select",
+      "type": "registry:ui",
+      "title": "Select (Base UI)",
+      "description": "Compound Select parts layered over Base UI primitives, preserving the original trigger press, chevron rotation, grouped rows, and panel motion.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-select/iconiq-b-select.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-select.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-select"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-selection-toolbar",
+      "type": "registry:ui",
+      "title": "Selection Toolbar (Base UI)",
+      "description": "Floating selection toolbar with the same Iconiq API layered over Base UI toolbar primitives, including viewport-aware positioning, keyboard shortcuts, and fluid button motion.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-selection-toolbar/iconiq-b-selection-toolbar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-selection-toolbar.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-selection-toolbar"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-separator",
+      "type": "registry:ui",
+      "title": "Separator (Base UI)",
+      "description": "Separator with line, dashed, and dotted variants layered over the Base UI primitive, supporting horizontal and vertical orientation with a decorative default.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-separator/iconiq-b-separator.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-separator.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-separator"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-slider",
+      "type": "registry:ui",
+      "title": "Slider (Base UI)",
+      "description": "Slider with the same Iconiq API layered over Base UI primitives, preserving the original spring-settled fill, active track height, and thumb scale motion.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-slider/iconiq-b-slider.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-slider.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-slider"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-switch",
+      "type": "registry:ui",
+      "title": "Switch (Base UI)",
+      "description": "Switch with the same Iconiq API layered over Base UI primitives, preserving the original spring thumb travel, pressure-like squash, and foreground fill sweep.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-switch/iconiq-b-switch.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-switch.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-switch"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-tabs",
+      "type": "registry:ui",
+      "title": "Tabs (Base UI)",
+      "description": "Tabs with the same Iconiq API layered over Base UI primitives, preserving the measured underline, keyboard flow, and motion-smoothed panel shell from the core tabs component.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-tabs/iconiq-b-tabs.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-tabs.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Navegação",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-tabs"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-toggle",
+      "type": "registry:ui",
+      "title": "Toggle (Base UI)",
+      "description": "Two-state button with spring press feedback, a muted fill that bounces in when pressed, and a subtle content lift layered over Base UI toggle primitives.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-toggle/iconiq-b-toggle.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-toggle.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-toggle"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-togglegroup",
+      "type": "registry:ui",
+      "title": "Toggle Group (Base UI)",
+      "description": "Segmented toggle group with the same fluid wipe fill, sheen sweep, and icon press feedback as the standalone toggle, over Base UI toggle-group primitives.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-togglegroup/iconiq-b-togglegroup.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-togglegroup.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-togglegroup"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-b-tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip (Base UI)",
+      "description": "Tooltip with the same Iconiq API layered over Base UI primitives, preserving the original controlled delay timing, bubble shell, rotated-square arrow, and spring entrance motion.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-b-tooltip/iconiq-b-tooltip.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-b-tooltip.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "b-tooltip"
           ],
           "maturity": "stable",
           "provenance": {
@@ -82,6 +1148,243 @@
     },
     {
       "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-banner",
+      "type": "registry:ui",
+      "title": "Banner",
+      "description": "Top-of-screen announcement banner with four gradient tones, a left-aligned ringed icon and message, a right-aligned outlined action, a dismiss collapse, and a fluid spring morph that melts the bar into a confirmation pill when its action is clicked.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-banner/iconiq-banner.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-banner.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "banner"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-bento-builder",
+      "type": "registry:ui",
+      "title": "Bento Builder",
+      "description": "Interactive bento-grid layout tool — drag tiles to reposition, tap to rename, drag a corner to resize, add tiles, then export the generated grid layout code to drop straight into your own project.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-bento-builder/iconiq-bento-builder.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-bento-builder.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "bento-builder"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-breadcrumbs",
+      "type": "registry:ui",
+      "title": "Breadcrumbs",
+      "description": "Compound breadcrumb trail with Base UI render composition, subtle Motion transitions, and dedicated current-page and separator parts.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-breadcrumbs/iconiq-breadcrumbs.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-breadcrumbs.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Navegação",
+          "tags": [
+            "iconiq",
+            "motion",
+            "breadcrumbs"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "Primary action control with larger default hit targets, spring press feedback, optional intrinsic width animation, and Motion ripples. Forwards ref and native button props.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "iconiq-button/iconiq-button.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-button.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Ações",
+          "tags": [
+            "iconiq",
+            "motion",
+            "button"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-button-group",
+      "type": "registry:ui",
+      "title": "Button Group",
+      "description": "Grouped action buttons, text segments, separators, segmented button rows, and a selectable segmented control with spring-driven hover and active motion.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "iconiq-button-group/iconiq-button-group.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-button-group.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Ações",
+          "tags": [
+            "iconiq",
+            "motion",
+            "button-group"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-calendar",
+      "type": "registry:ui",
+      "title": "Calendar",
+      "description": "shadcn-style monthly calendar with animated month/year transitions, selectable days, and date-fns-powered grid generation.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion",
+        "lucide-react",
+        "date-fns"
+      ],
+      "files": [
+        {
+          "path": "iconiq-calendar/iconiq-calendar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-calendar.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "calendar"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
       "name": "iconiq-card",
       "type": "registry:ui",
       "title": "Card",
@@ -121,20 +1424,20 @@
     },
     {
       "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-      "name": "iconiq-table",
+      "name": "iconiq-carousel",
       "type": "registry:ui",
-      "title": "Table",
-      "description": "Composable table primitives with grid-aligned rows, optional animated sort buttons, and layout-preserving row transitions.",
+      "title": "Carousel",
+      "description": "Embla-powered carousel with aspect-ratio presets, responsive navigation placement, and horizontal or vertical slides. Built with embla-carousel-react and Lucide.",
       "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
       "dependencies": [
-        "motion",
+        "embla-carousel-react",
         "lucide-react"
       ],
       "files": [
         {
-          "path": "iconiq-table/iconiq-table.tsx",
+          "path": "iconiq-carousel/iconiq-carousel.tsx",
           "type": "registry:ui",
-          "target": "components/ui/iconiq-table.tsx"
+          "target": "components/ui/iconiq-carousel.tsx"
         }
       ],
       "meta": {
@@ -144,7 +1447,7 @@
           "tags": [
             "iconiq",
             "motion",
-            "table"
+            "carousel"
           ],
           "maturity": "stable",
           "provenance": {
@@ -160,20 +1463,1549 @@
     },
     {
       "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-      "name": "iconiq-alert",
+      "name": "iconiq-charts",
       "type": "registry:ui",
-      "title": "Alert",
-      "description": "Compound Alert, AlertTitle, and AlertDescription parts with optional icons, legacy prop support, polite live announcements, and inline or toast behavior.",
+      "title": "Charts",
+      "description": "Recharts shell with registry chart tokens, ease-out series growth, and calm tooltip and legend transitions.",
       "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
       "dependencies": [
-        "motion",
-        "class-variance-authority"
+        "recharts",
+        "motion"
       ],
       "files": [
         {
-          "path": "iconiq-alert/iconiq-alert.tsx",
+          "path": "iconiq-charts/iconiq-charts.tsx",
           "type": "registry:ui",
-          "target": "components/ui/iconiq-alert.tsx"
+          "target": "components/ui/iconiq-charts.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "charts"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-checkbox",
+      "type": "registry:ui",
+      "title": "Checkbox",
+      "description": "Single checkbox with spring-pressed feedback, a line-drawn checkmark, and an optional inline label. Motion only.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-checkbox/iconiq-checkbox.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-checkbox.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "checkbox"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-checkbox-group",
+      "type": "registry:ui",
+      "title": "Checkbox group",
+      "description": "Multi-select option list with bordered empty state and a primary tick only when checked, plus hover/tap motion on each row. Motion + Lucide.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-checkbox-group/iconiq-checkbox-group.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-checkbox-group.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "checkbox-group"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-code-block",
+      "type": "registry:ui",
+      "title": "Code Block",
+      "description": "Editor-style code block with a filename tab, a top-right spring-crossfade copy button, a bottom status bar with language and line count, line numbers, built-in theme-aware syntax highlighting, and line emphasis.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-code-block/iconiq-code-block.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-code-block.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "code-block"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-color-picker",
+      "type": "registry:ui",
+      "title": "Color Picker",
+      "description": "HSV panel with saturation field, hue/alpha sliders, multi-format readouts, hex input, and EyeDropper.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-color-picker/iconiq-color-picker.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-color-picker.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "color-picker"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-combobox",
+      "type": "registry:ui",
+      "title": "Combobox",
+      "description": "Searchable single-select input with inline filtering, arrow-key navigation, animated dropdown motion, and an optional clear action.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-combobox/iconiq-combobox.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-combobox.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "combobox"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-command-palette",
+      "type": "registry:ui",
+      "title": "Command Palette",
+      "description": "Radix dialog command menu with grouped search, keyboard shortcuts, navigation items, custom triggers, and optional theme switching.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-dialog",
+        "lucide-react",
+        "motion",
+        "next-themes"
+      ],
+      "files": [
+        {
+          "path": "iconiq-command-palette/iconiq-command-palette.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-command-palette.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "command-palette"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-context-menu",
+      "type": "registry:ui",
+      "title": "Context Menu",
+      "description": "Native-feeling context menu with fixed-position viewport-aware placement, per-item icons and shortcuts, and spring entrance motion.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-slot",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-context-menu/iconiq-context-menu.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-context-menu.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "context-menu"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-contribution-graph",
+      "type": "registry:ui",
+      "title": "Contribution Graph",
+      "description": "GitHub-style contribution calendar with compound calendar, block, total-count, and legend parts — pass raw Activity data or just a GitHub username and it fetches and caches the last year of contributions itself, shimmers a skeleton grid while loading, then fades the muted grid in and lights the greens up level by level — lightest to darkest — with springy pops, plus custom per-day tooltips and reduced-motion aware behavior.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "date-fns"
+      ],
+      "files": [
+        {
+          "path": "iconiq-contribution-graph/iconiq-contribution-graph.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-contribution-graph.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "contribution-graph"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-date-picker",
+      "type": "registry:ui",
+      "title": "Date Picker",
+      "description": "Collapsible date picker trigger with the shared Iconiq Calendar panel, spring open motion, and month-aware selection.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion",
+        "lucide-react",
+        "date-fns"
+      ],
+      "files": [
+        {
+          "path": "iconiq-date-picker/iconiq-date-picker.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-date-picker.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "date-picker"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-dia-text",
+      "type": "registry:ui",
+      "title": "Dia Text",
+      "description": "Animated inline text reveal with a sweeping gradient band, repeat controls, and optional fixed-width rotation for motion-driven typography.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-dia-text/iconiq-dia-text.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-dia-text.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "dia-text"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "Modal dialog on Radix Dialog with Motion overlay and content springs, staggered children, and an animated close control. Pass the same open boolean to DialogContent as the Dialog root for AnimatePresence.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-dialog",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-dialog/iconiq-dialog.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-dialog.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "dialog"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-drawer",
+      "type": "registry:ui",
+      "title": "Drawer",
+      "description": "Compound Vaul drawer with direction-aware layout, drag gestures, snap points, size variants, styled footer actions, optional close button, and safe-area-aware panel geometry.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "vaul",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-drawer/iconiq-drawer.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-drawer.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "drawer"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-dropdown",
+      "type": "registry:ui",
+      "title": "Dropdown",
+      "description": "Animated dropdown with a selectable value mode and an action-menu mode, plus chevron rotation and spring-driven menu entry.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-dropdown/iconiq-dropdown.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-dropdown.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "dropdown"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-faq-pro",
+      "type": "registry:ui",
+      "title": "FAQ Pro",
+      "description": "Searchable FAQ accordion with rounded cards, animated panels, automatic match expansion, and inline query highlighting. Built with Base UI Accordion, Motion, and Lucide.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-faq-pro/iconiq-faq-pro.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-faq-pro.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "faq-pro"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-favicon-badge",
+      "type": "registry:ui",
+      "title": "Favicon Badge",
+      "description": "Circular website favicon badge with optional label text, spring entrance animation, and Google favicon resolution.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-favicon-badge/iconiq-favicon-badge.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-favicon-badge.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "favicon-badge"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-feedback",
+      "type": "registry:ui",
+      "title": "Feedback Form",
+      "description": "Collapsed pill that morphs into an expanded feedback panel with a send button, loading state, and a textarea, driven by pure CSS transitions with asymmetric open/close easing.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-feedback/iconiq-feedback.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-feedback.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "feedback"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-file-tree",
+      "type": "registry:ui",
+      "title": "File Tree",
+      "description": "Compound file tree with nested FileTreeItem rows, Base UI Button folder toggles, extension-aware icons, hover highlight tracking, and optional blue emphasis for new files.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-file-tree/iconiq-file-tree.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-file-tree.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "file-tree"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-file-upload",
+      "type": "registry:ui",
+      "title": "File Upload",
+      "description": "Drag-and-drop file uploader with click-to-browse fallback, queued file rows, image previews, built-in progress states, and optional change callbacks.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-file-upload/iconiq-file-upload.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-file-upload.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "file-upload"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-flux-button",
+      "type": "registry:ui",
+      "title": "Flux Button",
+      "description": "Async button with idle, loading, and success states.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority",
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-flux-button/iconiq-flux-button.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-flux-button.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Ações",
+          "tags": [
+            "iconiq",
+            "motion",
+            "flux-button"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-hover-card",
+      "type": "registry:ui",
+      "title": "Hover Card",
+      "description": "Inline hover card with hover-only timing delays, instant focus reveal, collision-aware Popover positioning, Slot-based custom triggers, and a spring-driven content panel.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-popover",
+        "@radix-ui/react-slot",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-hover-card/iconiq-hover-card.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-hover-card.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "hover-card"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-icon-bar",
+      "type": "registry:ui",
+      "title": "Icon Bar",
+      "description": "Row of compact icon chips that expand on hover or focus and stay open when selected. Built with Base UI Toggle Group, Motion, and Lucide.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-icon-bar/iconiq-icon-bar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-icon-bar.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Ações",
+          "tags": [
+            "iconiq",
+            "motion",
+            "icon-bar"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-infiniteribbon",
+      "type": "registry:ui",
+      "title": "Infinite Ribbon",
+      "description": "Full-width looping announcement ribbon with repeated content, optional reverse direction, and diagonal rotation controls.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "files": [
+        {
+          "path": "iconiq-infiniteribbon/iconiq-infiniteribbon.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-infiniteribbon.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "infiniteribbon"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "Input with a spring-animated caret.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-input/iconiq-input.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-input.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "input"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-input-otp",
+      "type": "registry:ui",
+      "title": "Input OTP",
+      "description": "Animated one-time password field built on Base UI OTP Field with focus border motion, character entrance, caret pulse, and OTPSlots auto-layout.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-input-otp/iconiq-input-otp.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-input-otp.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "input-otp"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-logo-carousal",
+      "type": "registry:ui",
+      "title": "Logo Carousel",
+      "description": "Multi-column logo grid that cycles through sponsor logos with a staggered wave animation.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-logo-carousal/iconiq-logo-carousal.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-logo-carousal.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "logo-carousal"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-marker",
+      "type": "registry:ui",
+      "title": "Marker",
+      "description": "Hand-drawn text annotations — wavy, circle, highlight, underline, and more — that draw themselves in like ink as they scroll into view, with an optional animate prop for a fully static render.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-marker/iconiq-marker.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-marker.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "marker"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-message",
+      "type": "registry:ui",
+      "title": "Message",
+      "description": "Composable chat message primitives — group, row, avatar, bubble, header, and footer — where each message slides in beside its composer with a bouncy spring: sent messages arrive from the right, received from the left, morphing up from the bubble's tail corner and bouncing back once as they land, plus reduced-motion aware behavior.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-message/iconiq-message.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-message.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "message"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-morph-texts",
+      "type": "registry:ui",
+      "title": "Morph Text",
+      "description": "Cycling headline words with a goo-filter morph transition powered by Motion.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-morph-texts/iconiq-morph-texts.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-morph-texts.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "morph-texts"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-popover",
+      "type": "registry:ui",
+      "title": "Popover",
+      "description": "Popover built on Radix with portal-based positioning, optional anchor support, side-aware motion, and smooth size changes while content updates.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-popover",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-popover/iconiq-popover.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-popover.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "popover"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-r-accordion",
+      "type": "registry:ui",
+      "title": "Accordion (Radix UI)",
+      "description": "Compound Accordion, AccordionItem, AccordionTrigger, and AccordionContent parts layered over Radix UI primitives with Motion-heavy panel choreography.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-accordion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-r-accordion/iconiq-r-accordion.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-r-accordion.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "r-accordion"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-r-alert-dialog",
+      "type": "registry:ui",
+      "title": "Alert Dialog (Radix UI)",
+      "description": "Alert dialog with asChild triggers, action variants, optional media, controlled async flows, and reduced-motion aware transitions layered over Radix UI primitives.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-alert-dialog",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-r-alert-dialog/iconiq-r-alert-dialog.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-r-alert-dialog.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "r-alert-dialog"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-r-avatar",
+      "type": "registry:ui",
+      "title": "Avatar (Radix UI)",
+      "description": "Avatar with the same single Iconiq API layered over Radix UI primitives, preserving immediate fallback initials and the quiet image reveal.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-avatar",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-r-avatar/iconiq-r-avatar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-r-avatar.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "r-avatar"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-r-checkbox",
+      "type": "registry:ui",
+      "title": "Checkbox (Radix UI)",
+      "description": "Checkbox with the same Iconiq API layered over Radix UI primitives, preserving the original fill spring, press scale, checkmark draw, and label fade.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-checkbox",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-r-checkbox/iconiq-r-checkbox.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-r-checkbox.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "r-checkbox"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-r-collapsible",
+      "type": "registry:ui",
+      "title": "Collapsible (Radix UI)",
+      "description": "Collapsible with the same Iconiq API layered over Radix UI primitives, preserving the same height, icon, and content transitions as the Base UI version.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-collapsible",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-r-collapsible/iconiq-r-collapsible.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-r-collapsible.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "r-collapsible"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-r-dialog",
+      "type": "registry:ui",
+      "title": "Dialog (Radix UI)",
+      "description": "Dialog with the same exported Iconiq parts layered over Radix UI primitives, preserving the original dialog springs while using the softer alert-dialog card styling and overlay treatment.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-dialog",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-r-dialog/iconiq-r-dialog.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-r-dialog.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "r-dialog"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-r-dropdown",
+      "type": "registry:ui",
+      "title": "Dropdown (Radix UI)",
+      "description": "Dropdown with the same Iconiq trigger, grouped rows, action and select variants, and exact panel motion layered over Radix Dropdown Menu primitives.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu",
+        "@radix-ui/react-scroll-area",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-r-dropdown/iconiq-r-dropdown.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-r-dropdown.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "r-dropdown"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-r-hover-card",
+      "type": "registry:ui",
+      "title": "Hover Card (Radix UI)",
+      "description": "Hover card with the same Iconiq API layered over the dedicated Radix Hover Card primitive, preserving delayed hover reveal, instant focus open, collision-aware placement, and spring-driven content motion.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-hover-card",
+        "@radix-ui/react-slot",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-r-hover-card/iconiq-r-hover-card.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-r-hover-card.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "r-hover-card"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-r-popover",
+      "type": "registry:ui",
+      "title": "Popover (Radix UI)",
+      "description": "Popover with the same Iconiq API layered over Radix UI popover primitives, preserving side-aware panel motion, optional anchor support, and size-aware content transitions.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-popover",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-r-popover/iconiq-r-popover.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-r-popover.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "r-popover"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-r-progress",
+      "type": "registry:ui",
+      "title": "Progress (Radix UI)",
+      "description": "Progress bar with the same Iconiq API layered over Radix UI primitives, preserving the spring-smoothed fill, restrained inline readout, and quiet indeterminate motion.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-progress",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-r-progress/iconiq-r-progress.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-r-progress.tsx"
         }
       ],
       "meta": {
@@ -183,7 +3015,822 @@
           "tags": [
             "iconiq",
             "motion",
-            "alert"
+            "r-progress"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-r-radio-group",
+      "type": "registry:ui",
+      "title": "Radio Group (Radix UI)",
+      "description": "Radio group with the same Iconiq API layered over Radix UI primitives, preserving the original shared highlight, spring-loaded ring and dot, and staggered row entrance.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-radio-group",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-r-radio-group/iconiq-r-radio-group.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-r-radio-group.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "r-radio-group"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-r-select",
+      "type": "registry:ui",
+      "title": "Select (Radix UI)",
+      "description": "Compound Select parts layered over Radix UI primitives, preserving the original trigger press, chevron rotation, grouped rows, and panel motion.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-scroll-area",
+        "@radix-ui/react-select",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-r-select/iconiq-r-select.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-r-select.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "r-select"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-r-selection-toolbar",
+      "type": "registry:ui",
+      "title": "Selection Toolbar (Radix UI)",
+      "description": "Floating selection toolbar with the same Iconiq API layered over Radix UI toolbar primitives, including viewport-aware positioning, keyboard shortcuts, and fluid button motion.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-toolbar",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-r-selection-toolbar/iconiq-r-selection-toolbar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-r-selection-toolbar.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "r-selection-toolbar"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-r-separator",
+      "type": "registry:ui",
+      "title": "Separator (Radix UI)",
+      "description": "Separator with line, dashed, and dotted variants layered over the Radix UI primitive, supporting horizontal and vertical orientation with a decorative default.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-separator"
+      ],
+      "files": [
+        {
+          "path": "iconiq-r-separator/iconiq-r-separator.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-r-separator.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "r-separator"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-r-slider",
+      "type": "registry:ui",
+      "title": "Slider (Radix UI)",
+      "description": "Slider with the same Iconiq API layered over Radix UI primitives, preserving the original spring-settled fill, active track height, and thumb scale motion.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-slider",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-r-slider/iconiq-r-slider.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-r-slider.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "r-slider"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-r-switch",
+      "type": "registry:ui",
+      "title": "Switch (Radix UI)",
+      "description": "Switch with the same Iconiq API layered over Radix UI primitives, preserving the original spring thumb travel, pressure-like squash, and foreground fill sweep.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-switch",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-r-switch/iconiq-r-switch.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-r-switch.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "r-switch"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-r-tabs",
+      "type": "registry:ui",
+      "title": "Tabs (Radix UI)",
+      "description": "Tabs with the same Iconiq API layered over Radix UI primitives, preserving the measured underline, keyboard flow, and motion-smoothed panel shell from the core tabs component.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-tabs",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-r-tabs/iconiq-r-tabs.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-r-tabs.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Navegação",
+          "tags": [
+            "iconiq",
+            "motion",
+            "r-tabs"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-r-toggle",
+      "type": "registry:ui",
+      "title": "Toggle (Radix UI)",
+      "description": "Two-state button with spring press feedback, a muted fill that bounces in when pressed, and a subtle content lift layered over Radix UI toggle primitives.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "radix-ui",
+        "class-variance-authority",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-r-toggle/iconiq-r-toggle.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-r-toggle.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "r-toggle"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-r-togglegroup",
+      "type": "registry:ui",
+      "title": "Toggle Group (Radix UI)",
+      "description": "Segmented toggle group with the same fluid wipe fill, sheen sweep, and icon press feedback as the standalone toggle, over Radix UI toggle-group primitives.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "radix-ui",
+        "class-variance-authority",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-r-togglegroup/iconiq-r-togglegroup.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-r-togglegroup.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "r-togglegroup"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-r-tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip (Radix UI)",
+      "description": "Tooltip with the same Iconiq API layered over Radix Tooltip primitives, preserving the original controlled delay timing, bubble shell, rotated-square arrow, and spring entrance motion.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-tooltip",
+        "@radix-ui/react-slot",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-r-tooltip/iconiq-r-tooltip.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-r-tooltip.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "r-tooltip"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-radial-button",
+      "type": "registry:ui",
+      "title": "Radial Button",
+      "description": "Rounded action button with a radial foreground fill that spreads on hover or focus-visible. Built with Motion.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-radial-button/iconiq-radial-button.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-radial-button.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Ações",
+          "tags": [
+            "iconiq",
+            "motion",
+            "radial-button"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-radiogroup",
+      "type": "registry:ui",
+      "title": "Radio group",
+      "description": "Single-select option list with shared layoutId highlight, spring ring/dot on the control, staggered row entrance, and optional descriptions. Motion only — native button radios with role=radiogroup.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-radiogroup/iconiq-radiogroup.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-radiogroup.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "radiogroup"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-rating",
+      "type": "registry:ui",
+      "title": "Rating",
+      "description": "Compound star rating built from Rating and RatingButton — hover to preview, click or use arrow keys to set the value, with configurable size on the root, a springy scale pop, and color fade that ripples across the stars.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-rating/iconiq-rating.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-rating.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "rating"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-reasoning-steps",
+      "type": "registry:ui",
+      "title": "Reasoning Steps",
+      "description": "Base UI collapsible reasoning trace for AI replies with a shimmering trigger label and no status icon, per-step dots that pop into checkmarks once done, a self-timing elapsed-seconds readout, a crossfading collapsed preview of the current step, and a staggered vertical timeline once expanded.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-reasoning-steps/iconiq-reasoning-steps.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-reasoning-steps.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Feedback",
+          "tags": [
+            "iconiq",
+            "motion",
+            "reasoning-steps"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-reveal-text",
+      "type": "registry:ui",
+      "title": "Reveal Text",
+      "description": "Staggered word or character reveal with spring lift, blur fade, and optional scroll-triggered playback.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-reveal-text/iconiq-reveal-text.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-reveal-text.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "reveal-text"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-rolling-digits",
+      "type": "registry:ui",
+      "title": "Rolling Digits",
+      "description": "Spring-animated digit counter with transform, opacity, and vertical motion.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-rolling-digits/iconiq-rolling-digits.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-rolling-digits.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "rolling-digits"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-scroll-progress",
+      "type": "registry:ui",
+      "title": "Scroll Progress",
+      "description": "Ruler-style scroll indicator with tick marks that fill in as the page scrolls and a live percentage readout, dockable to either side or bottom corner of the viewport or a scrollable container.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "files": [
+        {
+          "path": "iconiq-scroll-progress/iconiq-scroll-progress.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-scroll-progress.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Navegação",
+          "tags": [
+            "iconiq",
+            "motion",
+            "scroll-progress"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-select",
+      "type": "registry:ui",
+      "title": "Select",
+      "description": "Animated single-select dropdown with staggered options, chevron rotation, scaleY panel, row hover slide, and check mark on the active item. Motion + Lucide.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-select/iconiq-select.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-select.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "select"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-selectiontoolbar",
+      "type": "registry:ui",
+      "title": "Selection Toolbar",
+      "description": "Floating inline formatting toolbar for editable text selections with viewport-aware positioning, keyboard shortcuts, theme tokens, and bold, italic, underline, link, copy, and strikethrough actions.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-selectiontoolbar/iconiq-selectiontoolbar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-selectiontoolbar.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "selectiontoolbar"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-setup-checklist",
+      "type": "registry:ui",
+      "title": "Setup Checklist",
+      "description": "Animated onboarding checklist card with staggered task rows, a drawn checkmark badge, and a floating progress pill with a spring-smoothed pie.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-setup-checklist/iconiq-setup-checklist.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-setup-checklist.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "setup-checklist"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-shimmer-text",
+      "type": "registry:ui",
+      "title": "Shimmer Text",
+      "description": "Animated shimmer text with a sweeping highlight band, adjustable spread, and configurable loop speed for emphasis-heavy copy.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-shimmer-text/iconiq-shimmer-text.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-shimmer-text.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "shimmer-text"
           ],
           "maturity": "stable",
           "provenance": {
@@ -219,6 +3866,44 @@
             "iconiq",
             "motion",
             "skeleton"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-slider",
+      "type": "registry:ui",
+      "title": "Slider",
+      "description": "Range control with spring-animated track and thumb, full-width pointer drag, and optional label and live value. Motion.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-slider/iconiq-slider.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-slider.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "slider"
           ],
           "maturity": "stable",
           "provenance": {
@@ -307,20 +3992,19 @@
     },
     {
       "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-      "name": "iconiq-code-block",
+      "name": "iconiq-streaming-text",
       "type": "registry:ui",
-      "title": "Code Block",
-      "description": "Editor-style code block with a filename tab, a top-right spring-crossfade copy button, a bottom status bar with language and line count, line numbers, built-in theme-aware syntax highlighting, and line emphasis.",
+      "title": "Streaming Text",
+      "description": "Word-by-word AI text streaming where each word fades in crisply wearing a blue gradient, then crossfades into the theme foreground once settled — black in light mode, white in dark — with a pulsing gradient dot at the stream head, natural prose wrapping, sr-only full-text announcement, and reduced-motion aware behavior.",
       "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
       "dependencies": [
-        "motion",
-        "lucide-react"
+        "motion"
       ],
       "files": [
         {
-          "path": "iconiq-code-block/iconiq-code-block.tsx",
+          "path": "iconiq-streaming-text/iconiq-streaming-text.tsx",
           "type": "registry:ui",
-          "target": "components/ui/iconiq-code-block.tsx"
+          "target": "components/ui/iconiq-streaming-text.tsx"
         }
       ],
       "meta": {
@@ -330,7 +4014,467 @@
           "tags": [
             "iconiq",
             "motion",
-            "code-block"
+            "streaming-text"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-switch",
+      "type": "registry:ui",
+      "title": "Switch",
+      "description": "Animated Radix switch with spring thumb travel, pressure-like thumb squash, foreground track fill, and optional inline label.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-switch",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-switch/iconiq-switch.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-switch.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "switch"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-table",
+      "type": "registry:ui",
+      "title": "Table",
+      "description": "Composable table primitives with grid-aligned rows, optional animated sort buttons, and layout-preserving row transitions.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-table/iconiq-table.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-table.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "table"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "description": "Segmented tabs with a sliding active pill, mix-blend label treatment, and Radix keyboard navigation.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-tabs",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-tabs/iconiq-tabs.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-tabs.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Navegação",
+          "tags": [
+            "iconiq",
+            "motion",
+            "tabs"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-team-invitation",
+      "type": "registry:ui",
+      "title": "Team Invitation",
+      "description": "Team invitation block with fluid morphing variants for inviting members, managing the team, assigning roles, and tracking pending invites.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-team-invitation/iconiq-team-invitation.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-team-invitation.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "team-invitation"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-testimonials",
+      "type": "registry:ui",
+      "title": "Testimonials",
+      "description": "Inline testimonial wall where hovering one quote blurs and dims the rest while the author attribution reveals beside the highlighted quote. Pure CSS :has()-driven hover state — no per-frame JS animation.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "files": [
+        {
+          "path": "iconiq-testimonials/iconiq-testimonials.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-testimonials.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "testimonials"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-text-inertia",
+      "type": "registry:ui",
+      "title": "Text Inertia",
+      "description": "Pointer-reactive word treatment that maps cursor velocity into Motion-powered spring movement.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-text-inertia/iconiq-text-inertia.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-text-inertia.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "text-inertia"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-text-loop",
+      "type": "registry:ui",
+      "title": "Text Loop",
+      "description": "Cycling text with vertical slide transitions—pass your own items and interval for rotating headlines or status copy.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-text-loop/iconiq-text-loop.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-text-loop.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "text-loop"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-theme-toggle",
+      "type": "registry:ui",
+      "title": "Theme Toggle",
+      "description": "Animated light/dark switch with a sliding knob, sun and moon icons, and bouncy track transitions. Built with Base UI Toggle; toggles the document dark class.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "iconiq-theme-toggle/iconiq-theme-toggle.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-theme-toggle.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Ações",
+          "tags": [
+            "iconiq",
+            "motion",
+            "theme-toggle"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-thinking-indicator",
+      "type": "registry:ui",
+      "title": "Thinking Indicator",
+      "description": "AI loading state with a sparkle glyph that wobbles through liquid blob keyframes into a circle while a companion twinkle blooms on the same timeline, cycling status words that slide through a soft blur, a per-word shimmer sweep, layout-stable width, and reduced-motion aware behavior.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-thinking-indicator/iconiq-thinking-indicator.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-thinking-indicator.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Feedback",
+          "tags": [
+            "iconiq",
+            "motion",
+            "thinking-indicator"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-timezone",
+      "type": "registry:ui",
+      "title": "Timezone",
+      "description": "Inline live clock for city aliases or IANA timezones with fluid digit rolls, pulsing separators, and spring transitions.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-timezone/iconiq-timezone.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-timezone.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Entrada",
+          "tags": [
+            "iconiq",
+            "motion",
+            "timezone"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip",
+      "description": "Animated hover/focus tooltip with collision-aware portaled positioning, Slot-based triggers, short-string content, and optional delay and side placement. Built with Motion and Radix Popover.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "@radix-ui/react-popover",
+        "@radix-ui/react-slot",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-tooltip/iconiq-tooltip.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-tooltip.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Sobreposição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "tooltip"
+          ],
+          "maturity": "stable",
+          "provenance": {
+            "origin": "iconiq",
+            "upstream": "edwinvakayil/iconiq",
+            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
+            "license": "MIT",
+            "adapted": false,
+            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
+          }
+        }
+      }
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "iconiq-typewriter",
+      "type": "registry:ui",
+      "title": "Typewriter",
+      "description": "Looping typewriter text effect with brief glitch substitutions and a blinking cursor.",
+      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "iconiq-typewriter/iconiq-typewriter.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/iconiq-typewriter.tsx"
+        }
+      ],
+      "meta": {
+        "supernova": {
+          "collection": "components",
+          "category": "Exibição",
+          "tags": [
+            "iconiq",
+            "motion",
+            "typewriter"
           ],
           "maturity": "stable",
           "provenance": {
@@ -384,19 +4528,19 @@
     },
     {
       "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-      "name": "iconiq-b-separator",
+      "name": "iconiq-verified-badge",
       "type": "registry:ui",
-      "title": "Separator (Base UI)",
-      "description": "Separator with line, dashed, and dotted variants layered over the Base UI primitive, supporting horizontal and vertical orientation with a decorative default.",
+      "title": "Verified Badge",
+      "description": "X-style verified scallop with shimmer or static variants, size presets, brand/gold/neutral tones, and reduced-motion aware animation.",
       "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
       "dependencies": [
-        "@base-ui/react"
+        "motion"
       ],
       "files": [
         {
-          "path": "iconiq-b-separator/iconiq-b-separator.tsx",
+          "path": "iconiq-verified-badge/iconiq-verified-badge.tsx",
           "type": "registry:ui",
-          "target": "components/ui/iconiq-b-separator.tsx"
+          "target": "components/ui/iconiq-verified-badge.tsx"
         }
       ],
       "meta": {
@@ -406,7 +4550,7 @@
           "tags": [
             "iconiq",
             "motion",
-            "b-separator"
+            "verified-badge"
           ],
           "maturity": "stable",
           "provenance": {
@@ -422,216 +4566,21 @@
     },
     {
       "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-      "name": "iconiq-b-avatar",
+      "name": "iconiq-week-calendar",
       "type": "registry:ui",
-      "title": "Avatar (Base UI)",
-      "description": "Avatar with the same single Iconiq API layered over Base UI primitives, keeping immediate fallback initials and a quiet image crossfade.",
+      "title": "Week Calendar",
+      "description": "Week strip that morphs into a full month grid, with a shared-layout spring pill and a draggable grabber handle.",
       "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
       "dependencies": [
-        "@base-ui/react",
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "iconiq-b-avatar/iconiq-b-avatar.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/iconiq-b-avatar.tsx"
-        }
-      ],
-      "meta": {
-        "supernova": {
-          "collection": "components",
-          "category": "Exibição",
-          "tags": [
-            "iconiq",
-            "motion",
-            "b-avatar"
-          ],
-          "maturity": "stable",
-          "provenance": {
-            "origin": "iconiq",
-            "upstream": "edwinvakayil/iconiq",
-            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
-            "license": "MIT",
-            "adapted": false,
-            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
-          }
-        }
-      }
-    },
-    {
-      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-      "name": "iconiq-b-switch",
-      "type": "registry:ui",
-      "title": "Switch (Base UI)",
-      "description": "Switch with the same Iconiq API layered over Base UI primitives, preserving the original spring thumb travel, pressure-like squash, and foreground fill sweep.",
-      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
-      "dependencies": [
-        "@base-ui/react",
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "iconiq-b-switch/iconiq-b-switch.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/iconiq-b-switch.tsx"
-        }
-      ],
-      "meta": {
-        "supernova": {
-          "collection": "components",
-          "category": "Entrada",
-          "tags": [
-            "iconiq",
-            "motion",
-            "b-switch"
-          ],
-          "maturity": "stable",
-          "provenance": {
-            "origin": "iconiq",
-            "upstream": "edwinvakayil/iconiq",
-            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
-            "license": "MIT",
-            "adapted": false,
-            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
-          }
-        }
-      }
-    },
-    {
-      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-      "name": "iconiq-b-checkbox",
-      "type": "registry:ui",
-      "title": "Checkbox (Base UI)",
-      "description": "Checkbox with the same Iconiq API layered over Base UI primitives, preserving the original fill spring, press scale, checkmark draw, and label fade.",
-      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
-      "dependencies": [
-        "@base-ui/react",
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "iconiq-b-checkbox/iconiq-b-checkbox.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/iconiq-b-checkbox.tsx"
-        }
-      ],
-      "meta": {
-        "supernova": {
-          "collection": "components",
-          "category": "Entrada",
-          "tags": [
-            "iconiq",
-            "motion",
-            "b-checkbox"
-          ],
-          "maturity": "stable",
-          "provenance": {
-            "origin": "iconiq",
-            "upstream": "edwinvakayil/iconiq",
-            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
-            "license": "MIT",
-            "adapted": false,
-            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
-          }
-        }
-      }
-    },
-    {
-      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-      "name": "iconiq-b-tooltip",
-      "type": "registry:ui",
-      "title": "Tooltip (Base UI)",
-      "description": "Tooltip with the same Iconiq API layered over Base UI primitives, preserving the original controlled delay timing, bubble shell, rotated-square arrow, and spring entrance motion.",
-      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
-      "dependencies": [
-        "@base-ui/react",
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "iconiq-b-tooltip/iconiq-b-tooltip.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/iconiq-b-tooltip.tsx"
-        }
-      ],
-      "meta": {
-        "supernova": {
-          "collection": "components",
-          "category": "Sobreposição",
-          "tags": [
-            "iconiq",
-            "motion",
-            "b-tooltip"
-          ],
-          "maturity": "stable",
-          "provenance": {
-            "origin": "iconiq",
-            "upstream": "edwinvakayil/iconiq",
-            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
-            "license": "MIT",
-            "adapted": false,
-            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
-          }
-        }
-      }
-    },
-    {
-      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-      "name": "iconiq-b-tabs",
-      "type": "registry:ui",
-      "title": "Tabs (Base UI)",
-      "description": "Tabs with the same Iconiq API layered over Base UI primitives, preserving the measured underline, keyboard flow, and motion-smoothed panel shell from the core tabs component.",
-      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
-      "dependencies": [
-        "@base-ui/react",
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "iconiq-b-tabs/iconiq-b-tabs.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/iconiq-b-tabs.tsx"
-        }
-      ],
-      "meta": {
-        "supernova": {
-          "collection": "components",
-          "category": "Navegação",
-          "tags": [
-            "iconiq",
-            "motion",
-            "b-tabs"
-          ],
-          "maturity": "stable",
-          "provenance": {
-            "origin": "iconiq",
-            "upstream": "edwinvakayil/iconiq",
-            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
-            "license": "MIT",
-            "adapted": false,
-            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
-          }
-        }
-      }
-    },
-    {
-      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-      "name": "iconiq-b-select",
-      "type": "registry:ui",
-      "title": "Select (Base UI)",
-      "description": "Compound Select parts layered over Base UI primitives, preserving the original trigger press, chevron rotation, grouped rows, and panel motion.",
-      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
-      "dependencies": [
-        "@base-ui/react",
         "motion",
-        "lucide-react"
+        "lucide-react",
+        "date-fns"
       ],
       "files": [
         {
-          "path": "iconiq-b-select/iconiq-b-select.tsx",
+          "path": "iconiq-week-calendar/iconiq-week-calendar.tsx",
           "type": "registry:ui",
-          "target": "components/ui/iconiq-b-select.tsx"
+          "target": "components/ui/iconiq-week-calendar.tsx"
         }
       ],
       "meta": {
@@ -641,7 +4590,7 @@
           "tags": [
             "iconiq",
             "motion",
-            "b-select"
+            "week-calendar"
           ],
           "maturity": "stable",
           "provenance": {
@@ -657,110 +4606,29 @@
     },
     {
       "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-      "name": "iconiq-b-dialog",
+      "name": "iconiq-wheel-picker",
       "type": "registry:ui",
-      "title": "Dialog (Base UI)",
-      "description": "Dialog with the same exported Iconiq parts layered over Base UI primitives, preserving the original dialog springs while using the softer alert-dialog card styling and overlay treatment.",
+      "title": "Wheel Picker",
+      "description": "iOS-style wheel picker with a 3D barrel, drag and flick inertia, detent snapping, velocity-driven motion blur, a per-row emphasis morph into the selection lens, optional looping columns, and reduced-motion aware springs.",
       "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
       "dependencies": [
-        "@base-ui/react",
-        "@radix-ui/react-slot",
-        "motion",
-        "lucide-react"
-      ],
-      "files": [
-        {
-          "path": "iconiq-b-dialog/iconiq-b-dialog.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/iconiq-b-dialog.tsx"
-        }
-      ],
-      "meta": {
-        "supernova": {
-          "collection": "components",
-          "category": "Sobreposição",
-          "tags": [
-            "iconiq",
-            "motion",
-            "b-dialog"
-          ],
-          "maturity": "stable",
-          "provenance": {
-            "origin": "iconiq",
-            "upstream": "edwinvakayil/iconiq",
-            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
-            "license": "MIT",
-            "adapted": false,
-            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
-          }
-        }
-      }
-    },
-    {
-      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-      "name": "iconiq-b-popover",
-      "type": "registry:ui",
-      "title": "Popover (Base UI)",
-      "description": "Popover with the same Iconiq API layered over Base UI popover primitives, preserving side-aware panel motion, optional anchor support, and size-aware content transitions.",
-      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
-      "dependencies": [
-        "@base-ui/react",
         "motion"
       ],
       "files": [
         {
-          "path": "iconiq-b-popover/iconiq-b-popover.tsx",
+          "path": "iconiq-wheel-picker/iconiq-wheel-picker.tsx",
           "type": "registry:ui",
-          "target": "components/ui/iconiq-b-popover.tsx"
+          "target": "components/ui/iconiq-wheel-picker.tsx"
         }
       ],
       "meta": {
         "supernova": {
           "collection": "components",
-          "category": "Sobreposição",
+          "category": "Entrada",
           "tags": [
             "iconiq",
             "motion",
-            "b-popover"
-          ],
-          "maturity": "stable",
-          "provenance": {
-            "origin": "iconiq",
-            "upstream": "edwinvakayil/iconiq",
-            "revision": "a85ae7b80c97e62da0b7b728a5f8582564289d20",
-            "license": "MIT",
-            "adapted": false,
-            "note": "Código do upstream sem alteração. A única diferença é o aviso MIT acrescentado no topo, que a licença exige viajar com cada cópia."
-          }
-        }
-      }
-    },
-    {
-      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-      "name": "iconiq-b-progress",
-      "type": "registry:ui",
-      "title": "Progress (Base UI)",
-      "description": "Progress bar with the same Iconiq API layered over Base UI primitives, preserving the spring-smoothed fill, restrained inline readout, and quiet indeterminate motion.",
-      "author": "Edwin Vakayil (Iconiq UI), redistribuído pelo Supernova",
-      "dependencies": [
-        "@base-ui/react",
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "iconiq-b-progress/iconiq-b-progress.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/iconiq-b-progress.tsx"
-        }
-      ],
-      "meta": {
-        "supernova": {
-          "collection": "components",
-          "category": "Feedback",
-          "tags": [
-            "iconiq",
-            "motion",
-            "b-progress"
+            "wheel-picker"
           ],
           "maturity": "stable",
           "provenance": {

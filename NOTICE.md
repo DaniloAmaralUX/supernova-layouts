@@ -7,12 +7,12 @@ como registro verificável, não como formalidade.
 
 ## Estado atual
 
-O repositório publica 44 itens, de duas origens:
+O repositório publica 143 itens, de duas origens:
 
 | Origem | Itens | Licença |
 | --- | --- | --- |
 | Supernova | 24 | Ver [LICENSE.md](LICENSE.md) |
-| Iconiq UI, de Edwin Vakayil | 20 | MIT |
+| Iconiq UI, de Edwin Vakayil | 119 | MIT |
 
 Cada item declara a sua origem em `meta.supernova.provenance`, e
 `scripts/check-registry.mjs` reprova o item que não declarar. A atribuição não
@@ -50,11 +50,22 @@ itens se chamam `iconiq-<nome>` justamente por isso: o nome de instalação diz 
 quem é o componente. O Supernova é a descoberta e a distribuição; a autoria é de
 quem escreveu.
 
-Os 20 componentes foram escolhidos porque já haviam sido usados e validados no
-experimento `supernova-catalogo` (commit `bcb35b3a`). O **código**, porém, vem do
-upstream atual, não daquelas cópias de setembro: o upstream pode ter corrigido
-defeitos desde então, e recuperar código antigo por comodidade seria herdar os
-defeitos junto.
+A biblioteca entra inteira: os 119 componentes de interface que o upstream
+publica com arquivo. O **código** vem do upstream atual, não das cópias que o
+experimento `supernova-catalogo` tinha em setembro (commit `bcb35b3a`) — o
+upstream pode ter corrigido defeitos desde então, e recuperar código antigo por
+comodidade seria herdar os defeitos junto.
+
+Seis itens tiveram a **declaração** de dependência corrigida, e nenhum teve o
+código alterado. O upstream os publica pedindo `@base-ui/react/input`,
+`.../button` e afins: isso não é um pacote npm, é um caminho dentro de um, e a
+CLI do shadcn falha com ENOENT tentando instalar. O import em tempo de execução
+está correto; errada estava só a linha que declara o pacote. A correção é
+mínima, está provada pelo teste de instalação, e recupera seis peças que
+ficariam de fora por um erro de digitação alheio.
+
+Um item ficou de fora: `iconiq-theme`, que não traz arquivo no upstream
+vendorizado.
 
 ## Dependências externas, e por que não são cópia
 
