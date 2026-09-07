@@ -1,0 +1,14 @@
+# dependencias
+node_modules/
+
+# saida de verificacao local do registro (gerada, nunca versionada)
+.registry-build/
+
+# ambiente
+.env
+.env.local
+
+# sistema operacional e editores
+.DS_Store
+Thumbs.db
+*.log

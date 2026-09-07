@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "items": [
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "hero-supernova",
+      "type": "registry:block",
+      "title": "Hero Supernova",
+      "description": "Secao de abertura com titulo, apoio e duas acoes. Exemplo de referencia da estrutura deste registro.",
+      "author": "Supernova",
+      "categories": ["marketing", "hero"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "marketing/hero-supernova/hero-supernova.tsx",
+          "type": "registry:component",
+          "target": "components/supernova/hero-supernova.tsx"
+        }
+      ]
+    }
+  ]
+}

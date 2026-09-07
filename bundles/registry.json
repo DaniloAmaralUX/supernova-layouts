@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "items": [
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "kit-inicial",
+      "type": "registry:item",
+      "title": "Kit inicial",
+      "description": "Instala de uma vez os itens de referencia deste registro. Serve para conferir que a instalacao funciona ponta a ponta.",
+      "author": "Supernova",
+      "registryDependencies": [
+        "@supernova-layouts/hero-supernova",
+        "@supernova-layouts/use-media-query"
+      ]
+    }
+  ]
+}

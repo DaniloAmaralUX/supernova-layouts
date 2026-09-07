@@ -1,0 +1,53 @@
+name: Registro
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: registro-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verificar:
+    name: Conferir e construir o registro
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar o Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Instalar dependências
+        run: npm ci
+
+      # Regras próprias deste repositório: nome duplicado, item na pasta
+      # errada, arquivo declarado que não existe, arquivo órfão, target
+      # faltando onde o schema exige.
+      - name: Conferir as regras do repositório
+        run: npm run check
+
+      # O build de verdade da CLI do shadcn. Se ele passa, a instalação
+      # funciona para quem consome.
+      - name: Construir o registro
+        run: npm run build
+
+      # A saída do build é descartável e está no .gitignore. Se ela aparecer
+      # versionada, alguém commitou por engano.
+      - name: Garantir que nada gerado foi versionado
+        run: |
+          if git ls-files --error-unmatch .registry-build >/dev/null 2>&1; then
+            echo "::error::A pasta .registry-build/ é gerada e não deve ser versionada."
+            exit 1
+          fi
+          echo "Nenhum arquivo gerado versionado."

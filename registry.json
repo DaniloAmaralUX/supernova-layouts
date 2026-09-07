@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "supernova-layouts",
+  "homepage": "https://github.com/DaniloAmaralUX/supernova-layouts",
+  "include": [
+    "ui/registry.json",
+    "components/registry.json",
+    "blocks/registry.json",
+    "pages/registry.json",
+    "themes/registry.json",
+    "styles/registry.json",
+    "hooks/registry.json",
+    "lib/registry.json",
+    "files/registry.json",
+    "bundles/registry.json"
+  ]
+}

@@ -1,0 +1,52 @@
+name: Defeito
+description: Relatar algo quebrado num item do registro
+title: "[defeito] "
+labels: ["defeito", "triagem"]
+body:
+  - type: input
+    id: item
+    attributes:
+      label: Nome do item
+      placeholder: hero-supernova
+    validations:
+      required: true
+
+  - type: dropdown
+    id: onde
+    attributes:
+      label: Onde quebra
+      options:
+        - Na instalação (o comando add falha)
+        - Depois de instalado (erro ao rodar)
+        - No visual (aparece errado)
+        - Na acessibilidade (teclado, leitor de tela, contraste)
+    validations:
+      required: true
+
+  - type: textarea
+    id: comando
+    attributes:
+      label: Comando usado
+      render: bash
+      placeholder: npx shadcn@latest add DaniloAmaralUX/supernova-layouts/hero-supernova
+    validations:
+      required: true
+
+  - type: textarea
+    id: esperado-obtido
+    attributes:
+      label: O que era esperado e o que aconteceu
+      placeholder: |
+        Esperado: o arquivo cair em components/supernova/
+        Aconteceu: erro "item not found"
+    validations:
+      required: true
+
+  - type: textarea
+    id: ambiente
+    attributes:
+      label: Ambiente
+      description: Saída de `node -v` e a versão da CLI do shadcn.
+      render: text
+    validations:
+      required: true

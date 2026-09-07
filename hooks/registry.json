@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "items": [
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "use-media-query",
+      "type": "registry:hook",
+      "title": "useMediaQuery",
+      "description": "Le uma media query e acompanha a mudanca, com leitura segura no servidor.",
+      "author": "Supernova",
+      "files": [
+        {
+          "path": "use-media-query/use-media-query.ts",
+          "type": "registry:hook"
+        }
+      ]
+    }
+  ]
+}

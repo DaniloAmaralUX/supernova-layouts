@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Como adicionar um layout
+    url: https://github.com/DaniloAmaralUX/supernova-layouts/blob/main/docs/como-adicionar-um-layout.md
+    about: Se você já vai escrever o layout, o passo a passo está aqui.
+  - name: Onde cada coisa mora
+    url: https://github.com/DaniloAmaralUX/supernova-layouts/blob/main/docs/taxonomia.md
+    about: Dúvida sobre em que pasta uma coisa entra.

@@ -1,0 +1,80 @@
+name: Pedido de layout
+description: Pedir um layout novo para o registro
+title: "[layout] "
+labels: ["layout", "triagem"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de abrir, confira em [taxonomia.md](https://github.com/DaniloAmaralUX/supernova-layouts/blob/main/docs/taxonomia.md)
+        se o que você quer já existe com outro nome.
+
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      description: O que a coisa é. Em dúvida, deixe em "não sei".
+      options:
+        - Seção de página (blocks)
+        - Página completa (pages)
+        - Componente composto (components)
+        - Primitivo (ui)
+        - Tema (themes)
+        - Hook (hooks)
+        - Não sei
+    validations:
+      required: true
+
+  - type: dropdown
+    id: dominio
+    attributes:
+      label: Domínio
+      description: Só se aplica a seção de página ou página completa.
+      options:
+        - marketing
+        - application
+        - commerce
+        - content
+        - forms
+        - data
+        - auth
+        - não se aplica
+    validations:
+      required: true
+
+  - type: textarea
+    id: para-que
+    attributes:
+      label: Para que serve
+      description: Que problema esse layout resolve, e para quem.
+      placeholder: Preciso mostrar três planos lado a lado com destaque no do meio.
+    validations:
+      required: true
+
+  - type: textarea
+    id: conteudo
+    attributes:
+      label: O que aparece na tela
+      description: Os elementos que precisam estar presentes.
+      placeholder: |
+        - Título da seção
+        - Três cartões, cada um com nome, preço, lista de itens e botão
+        - Destaque visual no cartão do meio
+    validations:
+      required: true
+
+  - type: input
+    id: referencia
+    attributes:
+      label: Referência
+      description: Link de algo parecido, se houver. Serve de referência, não de fonte para copiar.
+
+  - type: checkboxes
+    id: confirmacoes
+    attributes:
+      label: Confirmações
+      options:
+        - label: Procurei e não encontrei esse layout no registro.
+          required: true
+        - label: Sei que a referência serve de inspiração e que o código será escrito do zero.
+          required: true
