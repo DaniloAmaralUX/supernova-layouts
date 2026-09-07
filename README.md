@@ -93,7 +93,7 @@ npm install
 npm run verify
 ```
 
-`npm run verify` faz três coisas:
+`npm run verify` faz quatro coisas:
 
 1. `check` — as regras próprias deste repositório: nome duplicado, item na
    pasta errada para o tipo dele, nome que colide com primitivo do shadcn,
@@ -101,10 +101,12 @@ npm run verify
    existente que ninguém declarou, `target` faltando onde o schema exige.
 2. `catalog:check` — se o `CATALOG.md` ainda bate com o registro. Se não bate,
    rode `npm run catalog` e inclua o resultado no commit.
-3. `build` — o `shadcn build` de verdade, escrevendo em `.registry-build/`, que
+3. `validate` — o validador oficial do schema do shadcn. O `check` cobre as
+   regras da casa; este cobre o contrato da ferramenta.
+4. `build` — o `shadcn build` de verdade, escrevendo em `.registry-build/`, que
    é descartável e não vai para o Git.
 
-Se os três passam, a instalação funciona.
+Se os quatro passam, a instalação funciona.
 
 ## Documentação
 
