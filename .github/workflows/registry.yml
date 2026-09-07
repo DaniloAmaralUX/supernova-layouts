@@ -5,6 +5,12 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  # A matriz completa contra o repositório publicado, uma vez por semana.
+  # Ela pega o que o PR não pode pegar: o `main` no ar deixando de instalar
+  # porque a CLI do shadcn mudou, ou porque o GitHub mudou o que serve.
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -33,7 +39,8 @@ jobs:
 
       # Regras próprias deste repositório: nome duplicado, item na pasta
       # errada, arquivo declarado que não existe, arquivo órfão, target
-      # faltando onde o schema exige.
+      # faltando onde o schema exige, metadados do produto ausentes e
+      # diretiva de cliente fora da primeira linha.
       - name: Conferir as regras do repositório
         run: npm run check
 
@@ -47,6 +54,14 @@ jobs:
       - name: Construir o registro
         run: npm run build
 
+      # A prova que importa: a CLI real instala num projeto descartável e os
+      # arquivos chegam com os imports reescritos para os aliases de quem
+      # instala. No PR, só a amostra representativa — uma página, um
+      # componente e um hook —, porque a matriz completa é lenta e o que ela
+      # acrescenta é cobertura, não mecanismo.
+      - name: Provar a instalação (árvore local)
+        run: npm run verify:instalacao
+
       # A saída do build é descartável e está no .gitignore. Se ela aparecer
       # versionada, alguém commitou por engano.
       - name: Garantir que nada gerado foi versionado
@@ -56,3 +71,37 @@ jobs:
             exit 1
           fi
           echo "Nenhum arquivo gerado versionado."
+
+  matriz-completa:
+    name: Instalação de todos os itens pelo endereço publicado
+    # Só na execução agendada e na manual: este job instala pelo endereço do
+    # GitHub, então ele prova o `main` publicado, e não a árvore do PR. Rodar
+    # num PR daria um verde que não fala sobre o código do PR.
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar o Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Listar os itens do registro
+        id: itens
+        run: |
+          node -e "
+            const { resolverRegistro } = await import('./scripts/registry-lib.mjs');
+            const { itens } = resolverRegistro();
+            console.log(itens.map((e) => '--item ' + e.item.name).join(' '));
+          " --input-type=module > argumentos.txt
+          echo "argumentos=$(cat argumentos.txt)" >> "$GITHUB_OUTPUT"
+
+      - name: Provar a instalação de cada item pelo endereço documentado
+        run: node scripts/verify-instalacao.mjs --github ${{ steps.itens.outputs.argumentos }}

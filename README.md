@@ -93,18 +93,37 @@ npm install
 npm run verify
 ```
 
-`npm run verify` faz três coisas:
+`npm run verify` faz quatro coisas, nesta ordem:
 
 1. `check` — as regras próprias deste repositório: nome duplicado, item na
    pasta errada para o tipo dele, nome que colide com primitivo do shadcn,
    nome terminado em número, arquivo declarado que não existe, arquivo
-   existente que ninguém declarou, `target` faltando onde o schema exige.
+   existente que ninguém declarou, `target` faltando onde o schema exige,
+   `meta.supernova` ausente ou com valor fora do vocabulário, e diretiva
+   `"use client"` fora da primeira linha.
 2. `catalog:check` — se o `CATALOG.md` ainda bate com o registro. Se não bate,
    rode `npm run catalog` e inclua o resultado no commit.
 3. `build` — o `shadcn build` de verdade, escrevendo em `.registry-build/`, que
    é descartável e não vai para o Git.
+4. `verify:instalacao` — a CLI **real** do shadcn instalando numa amostra de
+   itens, num projeto descartável criado fora deste repositório, com os
+   aliases padrão do shadcn em vez dos nossos. Confere que os arquivos
+   chegaram, que nenhum import ficou apontando para caminho que só existe
+   aqui, e que a diretiva de cliente sobreviveu.
 
-Se os três passam, a instalação funciona.
+Os três primeiros passos falam sobre o registro. O quarto é o único que fala
+sobre a pessoa que instala, e é por isso que ele existe: schema válido não é
+arquivo entregue, e arquivo entregue não é import reescrito.
+
+Para provar o endereço publicado — `DaniloAmaralUX/supernova-layouts/<item>`,
+o que a documentação mostra — em vez da árvore local:
+
+```bash
+npm run verify:instalacao:github
+```
+
+Esse modo lê o `main` que está no ar, não o seu trabalho em andamento. Ele roda
+na CI semanal e sob demanda.
 
 ## Documentação
 
@@ -116,10 +135,17 @@ Se os três passam, a instalação funciona.
 
 ## Relação com os outros repositórios
 
-Este repositório trata de **layouts**. O produto Supernova — catálogo, temas e
-efeitos — vive em `supernova-ui` e tem o próprio registro, sob o apelido
-`@supernova-ui`. Os dois são independentes: um item daqui não depende de nada
-de lá, e vice-versa.
+Este repositório é a **fonte canônica do código instalável** do ecossistema.
+Um layout novo nasce aqui, e só aqui.
+
+O produto — vitrine, busca, prévia, documentação, temas, efeitos e ferramentas
+— vive em `supernova-ui` e é publicado em <https://supernovacn.vercel.app>. Ele
+**consome** os metadados deste registro durante a build e apresenta os itens nas
+prateleiras dele. Não existe uma segunda cópia dos layouts lá: quem quiser
+mudar um layout muda aqui.
+
+O `supernova-catalogo` foi um experimento. O que era autoral nele já está aqui;
+o repositório está sendo preparado para arquivamento.
 
 ## Licença
 

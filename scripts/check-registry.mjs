@@ -9,7 +9,7 @@
  * Uso: node scripts/check-registry.mjs
  */
 
-import { readdirSync, existsSync, statSync } from "node:fs"
+import { readdirSync, existsSync, statSync, readFileSync } from "node:fs"
 import { join } from "node:path"
 import {
   RAIZ,
@@ -232,6 +232,33 @@ for (const pasta of ["blocks", "pages"]) {
 // dependendo de alguem lembrar de escrever num arquivo separado.
 for (const { item, pastaRaiz } of coletados) {
   erros.push(...conferirMetadados(item, pastaRaiz))
+}
+
+// Regra 9 — a diretiva de cliente continua sendo a primeira coisa do arquivo.
+//
+// `"use client"` so vale no topo. Qualquer coisa antes dela — e um cabecalho
+// de licenca de 29 linhas e a candidata obvia — transforma o componente em
+// componente de servidor. O erro nao aparece aqui nem no `shadcn build`: ele
+// aparece em runtime, no projeto de quem instalou, e a causa fica longe do
+// sintoma. Esta regra ja pegou o defeito uma vez, na migracao da Iconiq.
+for (const entrada of coletados) {
+  for (const arquivo of entrada.item.files ?? []) {
+    if (!arquivo.path || !/\.(tsx?|jsx?)$/.test(arquivo.path)) continue
+
+    const caminho = join(RAIZ, caminhoDoArquivo(entrada, arquivo))
+    if (!existsSync(caminho)) continue
+
+    const conteudo = readFileSync(caminho, "utf8")
+    if (!/["']use client["']/.test(conteudo)) continue
+
+    if (!/^﻿?[ \t\r\n]*(["'])use client\1/.test(conteudo)) {
+      erros.push(
+        `Item "${entrada.item.name}": ${arquivo.path} tem "use client", mas não ` +
+          `na primeira linha. Assim a diretiva não vale e o componente vira de ` +
+          `servidor no projeto de quem instalar.`,
+      )
+    }
+  }
 }
 
 // ---------------------------------------------------------------------------
