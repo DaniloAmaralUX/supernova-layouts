@@ -184,7 +184,24 @@ for (const { item, declaradoEm } of coletados) {
   }
 }
 
-// Regra 4 — nenhum arquivo de fonte fica solto numa pasta de tipo sem que
+// Regra 4 — dependencia entre itens deste repositorio usa o endereco completo.
+// Um apelido tipo "@supernova-layouts/x" exigiria que quem instala tivesse um
+// registro por URL configurado, e este registro e lido direto do GitHub.
+// Com apelido a instalacao falha pedindo "registries" no components.json.
+const ENDERECO_DESTE_REPO = "DaniloAmaralUX/supernova-layouts/"
+for (const { item } of coletados) {
+  for (const dependencia of item.registryDependencies ?? []) {
+    if (dependencia.startsWith("@supernova-layouts/")) {
+      const alvo = dependencia.slice("@supernova-layouts/".length)
+      erros.push(
+        `Item "${item.name}" depende de "${dependencia}". Esse apelido nao existe ` +
+          `para um registro lido do GitHub. Use "${ENDERECO_DESTE_REPO}${alvo}".`,
+      )
+    }
+  }
+}
+
+// Regra 5 — nenhum arquivo de fonte fica solto numa pasta de tipo sem que
 // algum item o declare. Arquivo orfao nunca chega em quem instala.
 for (const pasta of Object.keys(PASTA_POR_TIPO)) {
   for (const arquivo of listarArquivos(join(RAIZ, pasta))) {
@@ -200,7 +217,7 @@ for (const pasta of Object.keys(PASTA_POR_TIPO)) {
   }
 }
 
-// Regra 5 — toda pasta de tipo tem README e registry.json proprios.
+// Regra 6 — toda pasta de tipo tem README e registry.json proprios.
 for (const pasta of Object.keys(PASTA_POR_TIPO)) {
   for (const obrigatorio of ["README.md", "registry.json"]) {
     const caminho = join(RAIZ, pasta, obrigatorio)

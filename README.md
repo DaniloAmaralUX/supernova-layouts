@@ -16,21 +16,11 @@ npx shadcn@latest add DaniloAmaralUX/supernova-layouts/hero-supernova
 Os dois primeiros trechos do endereço são o dono e o repositório. O que vem
 depois é o **nome do item**, não um caminho de arquivo.
 
-Para encurtar, registre um apelido no `components.json` do seu projeto:
-
-```json
-{
-  "registries": {
-    "@supernova-layouts": "DaniloAmaralUX/supernova-layouts"
-  }
-}
-```
-
-E então:
-
-```bash
-npx shadcn@latest add @supernova-layouts/hero-supernova
-```
+Esse endereço completo é a única forma que funciona aqui. O apelido curto do
+`components.json` — `"registries": { "@algo": "..." }` — só vale para registro
+servido por URL, e a CLI recusa a configuração se você apontar um repositório
+do GitHub nela. Vale para quem instala e vale também para um item daqui
+depender de outro: ver `bundles/registry.json`.
 
 > Se o repositório passar a ser privado, a instalação continua funcionando para
 > quem tem acesso: basta um `gh auth login`, ou a variável `GH_TOKEN` com um

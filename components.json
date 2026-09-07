@@ -18,8 +18,5 @@
     "lib": "@/lib",
     "hooks": "@/hooks",
     "utils": "@/lib/utils"
-  },
-  "registries": {
-    "@supernova-layouts": "DaniloAmaralUX/supernova-layouts"
   }
 }

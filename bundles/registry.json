@@ -9,8 +9,8 @@
       "description": "Instala de uma vez os itens de referencia deste registro. Serve para conferir que a instalacao funciona ponta a ponta.",
       "author": "Supernova",
       "registryDependencies": [
-        "@supernova-layouts/hero-supernova",
-        "@supernova-layouts/use-media-query"
+        "DaniloAmaralUX/supernova-layouts/hero-supernova",
+        "DaniloAmaralUX/supernova-layouts/use-media-query"
       ]
     }
   ]

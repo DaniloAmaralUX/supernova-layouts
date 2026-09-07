@@ -16,26 +16,29 @@ O endereço tem três partes: dono, repositório e **nome do item**. A última
 parte não é um caminho de arquivo — `blocks/marketing/hero-supernova` não
 funciona; `hero-supernova` funciona.
 
-## Encurtar com um apelido
+## Não existe apelido curto para este registro
 
-No `components.json` do projeto que consome:
+A chave `registries` do `components.json` serve para registro **servido por
+URL**, e o valor precisa ser um endereço com `{name}`:
 
 ```json
 {
   "registries": {
-    "@supernova-layouts": "DaniloAmaralUX/supernova-layouts"
+    "@algum-registro": "https://algum-site.com/r/{name}.json"
   }
 }
 ```
 
-Depois disso:
+Apontar um repositório do GitHub ali não funciona. A CLI recusa com
+`Invalid configuration found in components.json` se o valor não for uma URL, e
+com `item not found` se você montar uma URL que não existe.
 
-```bash
-npx shadcn@latest add @supernova-layouts/hero-supernova
-```
+Então, para este registro, use sempre o endereço completo. É mais comprido e é
+o que funciona.
 
-O apelido também é o que permite um item deste repositório depender de outro,
-como faz o `kit-inicial` em `bundles/`.
+A mesma regra vale dentro do repositório: quando um item depende de outro item
+daqui, `registryDependencies` recebe o endereço completo, não um apelido. É o
+que o `kit-inicial` faz em `bundles/registry.json`.
 
 ## Ver antes de instalar
 
@@ -88,15 +91,18 @@ pasta num pull request, o pull request está errado.
 
 ## Relação com `@supernova-ui`
 
-São dois registros independentes. Um projeto pode declarar os dois:
+São dois registros independentes, e eles são consumidos de formas diferentes.
+
+O `supernova-ui` é servido por URL, então tem apelido:
 
 ```json
 {
   "registries": {
-    "@supernova-ui": "https://supernovacn.vercel.app/r/{name}.json",
-    "@supernova-layouts": "DaniloAmaralUX/supernova-layouts"
+    "@supernova-ui": "https://supernovacn.vercel.app/r/{name}.json"
   }
 }
 ```
 
-Nenhum item daqui depende de item de lá.
+Este aqui é lido do GitHub e usa o endereço completo, sem apelido. Os dois
+convivem no mesmo projeto sem conflito, e nenhum item daqui depende de item
+de lá.

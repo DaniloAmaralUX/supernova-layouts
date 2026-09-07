@@ -10,11 +10,21 @@ Um conjunto não tem arquivo próprio: ele só aponta para outros itens em
   "name": "kit-inicial",
   "type": "registry:item",
   "registryDependencies": [
-    "@supernova-layouts/hero-supernova",
-    "@supernova-layouts/use-media-query"
+    "DaniloAmaralUX/supernova-layouts/hero-supernova",
+    "DaniloAmaralUX/supernova-layouts/use-media-query"
   ]
 }
 ```
+
+## O endereço completo é obrigatório
+
+Um item deste repositório referencia outro pelo endereço completo
+`DaniloAmaralUX/supernova-layouts/<item>`. O apelido `@supernova-layouts/...`
+**não funciona**: ele exigiria que quem instala tivesse um registro por URL
+configurado no `components.json`, e este registro é lido direto do GitHub.
+
+Usar o apelido faz a instalação falhar com a mensagem
+`Add the registry configuration under "registries"`.
 
 ## O que entra
 
