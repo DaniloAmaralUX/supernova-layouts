@@ -12,3 +12,6 @@ node_modules/
 .DS_Store
 Thumbs.db
 *.log
+
+# fixtures de teste de instalacao (gerados, nunca versionados)
+.tmp/

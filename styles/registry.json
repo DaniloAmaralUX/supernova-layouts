@@ -1,4 +1,41 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
-  "items": []
+  "items": [
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "supernova-tokens",
+      "type": "registry:style",
+      "title": "Tokens Supernova",
+      "description": "A escala de superfície e a cor de marca que as telas deste registro usam além do vocabulário padrão do shadcn.",
+      "author": "Supernova",
+      "cssVars": {
+        "theme": {
+          "color-surface-1": "var(--surface-1)",
+          "color-surface-2": "var(--surface-2)",
+          "color-surface-3": "var(--surface-3)",
+          "color-border-soft": "var(--border-soft)",
+          "color-brand": "var(--brand)"
+        },
+        "light": {
+          "surface-1": "color-mix(in oklab, var(--foreground) 2.5%, transparent)",
+          "surface-2": "color-mix(in oklab, var(--foreground) 4.5%, transparent)",
+          "surface-3": "color-mix(in oklab, var(--foreground) 8%, transparent)",
+          "border-soft": "color-mix(in oklab, var(--border) 60%, transparent)",
+          "brand": "oklch(0.6 0.118 184.704)"
+        },
+        "dark": {
+          "brand": "oklch(0.704 0.14 182.503)"
+        }
+      },
+      "meta": {
+        "supernova": {
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
+    }
+  ]
 }

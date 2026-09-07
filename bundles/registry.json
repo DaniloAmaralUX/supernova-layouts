@@ -11,7 +11,16 @@
       "registryDependencies": [
         "DaniloAmaralUX/supernova-layouts/hero-supernova",
         "DaniloAmaralUX/supernova-layouts/use-media-query"
-      ]
+      ],
+      "meta": {
+        "supernova": {
+          "provenance": {
+            "origin": "supernova",
+            "license": "MIT",
+            "adapted": false
+          }
+        }
+      }
     }
   ]
 }

@@ -7,45 +7,95 @@ como registro verificável, não como formalidade.
 
 ## Estado atual
 
-Neste momento o repositório contém apenas:
+O repositório publica 44 itens, de duas origens:
 
-- A estrutura de pastas e os arquivos `registry.json` de composição.
-- A documentação em português.
-- Dois itens autorais de referência: `hero-supernova` e `use-media-query`.
-- O script `scripts/check-registry.mjs`.
+| Origem | Itens | Licença |
+| --- | --- | --- |
+| Supernova | 24 | Ver [LICENSE.md](LICENSE.md) |
+| Iconiq UI, de Edwin Vakayil | 20 | MIT |
 
-**Não há código de terceiros vendorizado neste repositório.** Nenhum arquivo
-foi copiado de outro projeto.
+Cada item declara a sua origem em `meta.supernova.provenance`, e
+`scripts/check-registry.mjs` reprova o item que não declarar. A atribuição não
+depende de alguém lembrar de escrevê-la.
+
+O que **não** entrou, e o que desbloqueia cada caso, está em
+[docs/BLOQUEIOS-DE-LICENCA.md](docs/BLOQUEIOS-DE-LICENCA.md).
+
+## Iconiq UI
+
+```
+Iconiq UI
+Copyright © 2024-2026 Edwin Vakayil
+MIT License
+https://github.com/edwinvakayil/iconiq
+```
+
+- **Autor e titular:** Edwin Vakayil.
+- **Origem:** <https://github.com/edwinvakayil/iconiq>, site <https://iconiqui.com>.
+- **Revisão consultada:** `a85ae7b80c97e62da0b7b728a5f8582564289d20`, de
+  2026-09-01. Fixada, não estimada.
+- **Licença:** MIT. O texto integral acompanha cada arquivo entregue.
+- **O que foi alterado:** nada no código. A única diferença em relação ao
+  original é o aviso de licença acrescentado no topo de cada arquivo.
+
+O MIT autoriza redistribuir, e impõe uma obrigação: o aviso de copyright e a
+permissão têm de viajar com cada cópia. Como este registro entrega arquivos de
+código para a máquina de terceiros, esse aviso vai **dentro de cada arquivo**, e
+não numa página de créditos que a cópia deixa para trás. Cortar o aviso para uma
+linha de crédito seria descumprir a única exigência da licença que torna esta
+redistribuição possível.
+
+Um componente da Iconiq distribuído pelo Supernova continua sendo da Iconiq. Os
+itens se chamam `iconiq-<nome>` justamente por isso: o nome de instalação diz de
+quem é o componente. O Supernova é a descoberta e a distribuição; a autoria é de
+quem escreveu.
+
+Os 20 componentes foram escolhidos porque já haviam sido usados e validados no
+experimento `supernova-catalogo` (commit `bcb35b3a`). O **código**, porém, vem do
+upstream atual, não daquelas cópias de setembro: o upstream pode ter corrigido
+defeitos desde então, e recuperar código antigo por comodidade seria herdar os
+defeitos junto.
 
 ## Dependências externas, e por que não são cópia
 
 Os itens declaram dependências que a CLI do shadcn instala do registro oficial,
 em vez de trazerem cópias:
 
-- **shadcn/ui** (© 2023 shadcn, licença MIT) — o item `hero-supernova` declara
-  `"registryDependencies": ["button"]`. O botão vem do registro oficial do
-  shadcn no momento da instalação. Nenhum arquivo do shadcn/ui está versionado
-  aqui.
+- **shadcn/ui** (© 2023 shadcn, licença MIT) — as telas declaram
+  `registryDependencies` como `button`, `input`, `label`, `select` e afins. Eles
+  vêm do registro oficial no momento da instalação. **Nenhum arquivo do
+  shadcn/ui está versionado aqui**, e por isso este repositório não assume a
+  obrigação de aviso nem o trabalho de manter cópia alheia atualizada.
 
 Sempre que um item novo precisar de um primitivo já existente, ele deve fazer o
 mesmo: declarar a dependência, não copiar o arquivo.
 
 ## O que foi deliberadamente deixado de fora
 
-O repositório irmão `supernova-ui` distribui 54 blocos originários do
-**shadcn/studio** (© 2025 ThemeSelection), cuja licença traz uma cláusula de
-produtos concorrentes:
+Resumo; o documento completo é
+[docs/BLOQUEIOS-DE-LICENCA.md](docs/BLOQUEIOS-DE-LICENCA.md).
+
+**shadcn/studio** — o repositório irmão `supernova-ui` distribui 54 blocos
+originários do shadcn/studio (© 2025 ThemeSelection), cuja licença traz:
 
 > **Competing Products:** The Software shall not be used to create any product
 > or service that directly competes with shadcn/studio.
 
 Um catálogo público de layouts instaláveis é exatamente o tipo de produto que
-essa cláusula alcança. Por isso **nenhum daqueles 54 blocos foi trazido para
-este repositório**, nem em forma adaptada.
+essa cláusula alcança. **Nenhum daqueles 54 blocos foi trazido para cá**, nem em
+forma adaptada.
 
-A taxonomia de categorias em `blocks/` e `pages/` — nomes como `hero-section`
-ou `pricing-component` — descreve funções de interface de uso corrente no setor
-e não reproduz código, texto ou arranjo visual daquele projeto.
+**devl.dev** — 140 telas do experimento `supernova-catalogo` derivam de um
+registro que não declara licença. Ausência de licença é todos os direitos
+reservados por padrão. Nenhuma delas entrou aqui. As 18 telas autorais do mesmo
+experimento entraram, e são identificáveis por `provenance.origin: "supernova"`.
+
+**Canvas UI** — os 96 efeitos do produto são MIT + Commons Clause, com
+redistribuição e versão portada nomeadas na restrição. Não entraram.
+
+A taxonomia de categorias em `blocks/` e `pages/` — nomes como `hero-section` ou
+`pricing-component` — descreve funções de interface de uso corrente no setor e
+não reproduz código, texto ou arranjo visual de nenhum desses projetos.
 
 ## Como manter este arquivo verdadeiro
 
@@ -58,3 +108,8 @@ de abrir o pull request:
 - o que foi alterado em relação ao original.
 
 Se você não consegue preencher esses quatro pontos, o arquivo não entra.
+
+Um NOTICE que subestima a origem de terceiros é pior do que nenhum: ele é uma
+afirmação falsa distribuída junto com o código. Este repositório tem um exemplo
+vivo do risco — o NOTICE do `supernova-catalogo` afirmava "18 de 36" telas
+vindas do devl.dev enquanto a árvore já tinha 140 de 158.

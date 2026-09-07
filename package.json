@@ -15,7 +15,9 @@
     "catalog:check": "node scripts/build-catalog.mjs --check",
     "validate": "shadcn registry validate ./registry.json",
     "build": "shadcn build ./registry.json --output ./.registry-build",
-    "verify": "npm run check && npm run catalog:check && npm run validate && npm run build"
+    "verify": "npm run check && npm run catalog:check && npm run validate && npm run build && npm run verify:instalacao",
+    "verify:instalacao": "node scripts/verify-instalacao.mjs",
+    "verify:instalacao:github": "node scripts/verify-instalacao.mjs --github"
   },
   "devDependencies": {
     "shadcn": "4.19.0"

@@ -84,3 +84,58 @@ quebrar.
 **Uma fonte.** É `styles/`, porque vale para o projeto todo, não para um tema.
 
 **Um `formatarMoeda`.** É `lib/`. Não tem React, não tem estado.
+
+## A segunda taxonomia: a que a pessoa vê
+
+Tudo acima é a taxonomia **física**: onde o arquivo mora e como a CLI do shadcn
+trata o item. Ela existe para quem contribui.
+
+Existe uma segunda, que existe para quem procura. No produto, em
+<https://supernovacn.vercel.app>, os itens aparecem em prateleiras:
+
+```
+Components   unidades reutilizáveis
+Blocks       seções de página
+App UI       telas de produto
+```
+
+Quem procura uma tela de login não deveria precisar saber que ela é um
+`registry:page`. Por isso as duas taxonomias não se misturam: cada item declara
+a prateleira dele em `meta.supernova`, e o produto lê só isso.
+
+```jsonc
+"meta": {
+  "supernova": {
+    "collection": "app-ui",         // components | blocks | app-ui
+    "category": "Autenticação",     // depende da coleção
+    "tags": ["login", "acesso"],    // o que a busca encontra além do título
+    "maturity": "stable",           // stable | beta
+    "provenance": {
+      "origin": "supernova",        // supernova | iconiq | shadcn
+      "license": "MIT",
+      "adapted": false
+    }
+  }
+}
+```
+
+O vocabulário fechado está em [`scripts/taxonomia.mjs`](../scripts/taxonomia.mjs),
+e `npm run check` reprova valor fora dele. Os rótulos de `blocks` e `app-ui` são
+os mesmos que o produto já usa: um valor novo aqui sem o par de lá quebra a
+build do site, e isso é de propósito.
+
+Item de vitrine — o que mora em `ui/`, `components/`, `blocks/` ou `pages/` —
+declara o bloco inteiro. Hook, utilitário, arquivo e conjunto declaram só a
+proveniência: eles chegam junto com o que a pessoa escolheu e não aparecem em
+prateleira nenhuma, então inventar coleção para eles seria inventar um lugar que
+não existe.
+
+### Por que a proveniência é obrigatória em todo item
+
+Porque a alternativa é depender de alguém lembrar. Um registro público entrega
+arquivos de código para a máquina de terceiros; de quem é aquele código e sob
+que licença ele viaja não pode ser uma nota num arquivo separado que a cópia
+deixa para trás.
+
+Item de origem diferente de `supernova` precisa declarar `upstream`, senão a
+atribuição fica pela metade: crédito sem endereço não permite conferir a origem.
